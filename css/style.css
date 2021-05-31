@@ -92,6 +92,16 @@ li:hover:not(.left-item) { color: red; }
 }
 
 @media screen and (max-width: 700px) {
+  * { font-size: 0.9em; }
+}
+
+@media screen and (max-width: 700px) and (orientation: portrait) {
+
   .mobile-learn { display:block; }
   .readmore { display: none;}
+
+}
+
+@media screen and (max-width: 700px) and (orientation: landscape) {
+  
 }

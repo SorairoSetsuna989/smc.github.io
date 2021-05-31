@@ -39,7 +39,8 @@
     max-height: 15vh;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) and (orientation: portrait) {
+
     .grid-item-1 {
         height: max-content;
     }

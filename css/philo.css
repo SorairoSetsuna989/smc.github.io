@@ -30,7 +30,8 @@ body { background-image: url("../img/about_3.JPG"); }
     border-radius: 13px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) and (orientation: portrait) {
+
     .grid-container > * {  font-size: 0.85em;  }
     .grid-item:not(.grid-item-0) { margin-bottom: 5vW; }
 }

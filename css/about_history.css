@@ -75,7 +75,8 @@ body { background-image: url("../img/history_bg.jpg"); }
 .grid-item-11 { background-image: url(../img/history.jpg); }
 .content { font-size: 1.1em; }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) and (orientation: portrait) {
+
     .grid-item {
         grid-column-end: -1;
         grid-column-start: 1;

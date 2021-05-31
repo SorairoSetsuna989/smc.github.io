@@ -1,5 +1,4 @@
 .grid-item { opacity: 100%; }
-
 .grid-item .NewLearn { display:none; }
 
 /* Background images for each grid */
@@ -13,6 +12,17 @@
   background-size: contain;
 }
 
+/* Mobile Mode */
+@media screen and (max-width: 700px) and (orientation: portrait) {
+
+  .grid-container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .caption { opacity: 80%; }
+}
 
 /* Hover states */
 @media (hover: hover) {
@@ -40,15 +50,6 @@
 
   .readmore { padding-left: 30vw; }
   .NewLearn {  text-align: right;  }
-}
 
-/* Mobile Mode */
-@media screen and (max-width: 700px) {
-  .grid-container {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-  }
-
-  .caption { opacity: 80%; }
+  .caption-3, .caption-4 { opacity: 0% !important; }
 }

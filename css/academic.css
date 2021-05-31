@@ -84,7 +84,8 @@
 
 .grid-item-10 { background-image: url(); }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) and (orientation: portrait) {
+
   .grid-container-3 { text-align: center;}
   .grid-item-5 {  background-image: url(../img/cvif.JPG); }
   .grid-item-7 { background-image: url(../img/aca_4.JPG); }

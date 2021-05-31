@@ -75,7 +75,8 @@ margin-right: 5px;
 #mobilenav { display: none; } /* disables mobilenav in desktop mode */
 
 /* Mobile version */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px){
+
   #navbar { display: none; } /* Disables desktop nav bar in mobile mode */
 
   #mobilenav {
@@ -130,3 +131,4 @@ margin-right: 5px;
 
   .list-item:hover { background-color: wheat; };
 }
+

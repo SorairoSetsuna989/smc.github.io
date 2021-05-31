@@ -1,10 +1,11 @@
 @media screen and (max-width: 700px) {
-  
+}
+
+@media screen and (max-width: 700px) {
   #header-art { display: none; /* height: 30vh; */ }
 
   .grid-container {
-    font-size: 0.65em;
-    grid-template-columns: 0.9fr;
+    grid-template-columns: 0.95fr;
     grid-gap: 3vw;
     grid-auto-rows: auto;
   }
