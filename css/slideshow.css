@@ -1,0 +1,128 @@
+.container {
+	width:100%;
+  margin: 3vh 6vw 1vh;
+	overflow:auto;
+  justify-content: center;
+}
+
+.slider-inner, .slider-inner img { height:58vh; }
+
+.slider-inner{
+  width: 70%;
+	position:relative;
+	overflow:hidden;
+	float:left;
+	padding:3px;
+	border:#666 solid 1px;
+}
+
+.slider-inner img { 
+  display:none; 
+  width: 100%;
+}
+.slider-inner img.active{ display:inline-block; }
+
+.prev,.next{
+	float:left;
+	margin-top:25vh;
+	cursor: pointer;
+  font-size: 2em;
+}
+
+.prev, .next { z-index:100; }
+
+.prev{
+	position:relative;
+	margin-right:0;
+  padding-right: 1vw;
+}
+
+.next{
+	position:absolute;
+	margin-left:0px;
+  padding-left: 1vw;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 1s ease;
+}
+
+.active-dot {
+  background-color: #717171;
+  justify-content: center;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 700; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  height: 80vh;
+}
+
+.modal-content {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+@media only screen and (max-width: 700px){
+  .modal-content {
+    padding-top: 15vh;
+    width: 95%;
+    height: 50%;
+  }
+
+  .container { margin-left: 3vw; }
+  .slider-inner{ width: 80%; }
+
+  .slider-inner, .slider-inner img { height:30vh; }
+  
+  .prev,.next{ margin-top: 12vh; }
+
+}

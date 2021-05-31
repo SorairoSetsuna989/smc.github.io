@@ -1,0 +1,212 @@
+{
+  "FMM": {
+    "schoolhead": {
+      "firstName": "Teresita",
+      "lastName": "Elevera",
+      "middleName": "P.",
+      "suffix": "FMM",
+      "prefix": "SR.",
+      "fullName": "SR. Teresita P. Elevera FMM",
+      "role": "School Head",
+      "pic": "http://stellamariscollegeqc.edu.ph/wp-content/uploads/2021/04/srtess.jpg",
+      "description": "not set",
+      "nextRow": "nextRow"
+    },
+    "financeOfficer": {
+      "firstName": "AMELITA",
+      "lastName": "ABALOS",
+      "middleName": "T.",
+      "suffix": "FMM",
+      "prefix": "SR.",
+      "fullName": "SR. AMELITA T. ABALOS FMM",
+      "role": "Finance Officer",
+      "pic": "http://stellamariscollegeqc.edu.ph/wp-content/uploads/2021/04/sramy.jpg",
+      "description": "not set",
+      "nextRow": ""
+    },
+    "wellBeing": {
+      "firstName": "MARY CONCEPCION",
+      "lastName": "JOMEN",
+      "middleName": "T.",
+      "suffix": "FMM",
+      "prefix": "SR.",
+      "fullName": "SR. MARY CONCEPCION T. JOMEN FMM",
+      "role": "Student Well-being",
+      "pic": "http://stellamariscollegeqc.edu.ph/wp-content/uploads/2021/05/srsiony.jpg",
+      "description": "not set",
+      "nextRow": ""
+    },
+    "canteenSupervisor": {
+      "firstName": "ERLINDA",
+      "lastName": "STA. ROMANA",
+      "middleName": "",
+      "suffix": "FMM",
+      "prefix": "SR.",
+      "fullName": "SR. ERLINDA  STA. ROMANA FMM",
+      "role": "Canteen Supervisor",
+      "pic": "http://stellamariscollegeqc.edu.ph/wp-content/uploads/2021/05/srerlinda.jpg",
+      "description": "not set",
+      "nextRow": ""
+    }
+  },
+  "SALT": {
+    "AralingPanlipunan": {
+      "firstName": "Edna",
+      "lastName": "Oxales",
+      "middleName": "B.",
+      "suffix": "",
+      "prefix": "Mrs.",
+      "fullName": "Mrs. Edna B. Oxales ",
+      "role": "Araling Panlipunan",
+      "pic": "http://stellamariscollegeqc.edu.ph/wp-content/uploads/2021/03/199606001-1.jpg",
+      "description": "not set",
+      "nextRow": ""
+    },
+    "CLE": {
+      "firstName": "Rengin",
+      "lastName": "Fabula",
+      "middleName": "M.",
+      "suffix": "",
+      "prefix": "Mr.",
+      "fullName": "Mr. Rengin M. Fabula ",
+      "role": "Christian Life Education",
+      "pic": "http://stellamariscollegeqc.edu.ph/wp-content/uploads/2021/03/200106001-1.jpg",
+      "description": "not set",
+      "nextRow": ""
+    },
+    "Filipino": {
+      "firstName": "Chryzl Anne",
+      "lastName": "Gallardo",
+      "middleName": "A.",
+      "suffix": "",
+      "prefix": "Mrs.",
+      "fullName": "Mrs. Chryzl Anne A. Gallardo ",
+      "role": "Filipino",
+      "pic": "http://stellamariscollegeqc.edu.ph/wp-content/uploads/2021/03/201406001-1.jpg",
+      "description": "not set",
+      "nextRow": "nextRow"
+    },
+    "Mathematics": {
+      "firstName": "Marife",
+      "lastName": "Corpuz",
+      "middleName": "O.",
+      "suffix": "",
+      "prefix": "Ms.",
+      "fullName": "Ms. Marife O. Corpuz ",
+      "role": "Mathematics",
+      "pic": "http://stellamariscollegeqc.edu.ph/wp-content/uploads/2021/03/201006001-1.jpg",
+      "description": "not set",
+      "nextRow": ""
+    },
+    "MAPEH": {
+      "firstName": "Cherry Rose",
+      "lastName": "Mendoza",
+      "middleName": "C.",
+      "suffix": "",
+      "prefix": "Ms.",
+      "fullName": "Ms. Cherry Rose C. Mendoza ",
+      "role": "MAPEH",
+      "pic": "http://stellamariscollegeqc.edu.ph/wp-content/uploads/2021/03/201706004.jpg",
+      "description": "not set",
+      "nextRow": ""
+    },
+    "Science": {
+      "firstName": "Lusita",
+      "lastName": "Sabalburo",
+      "middleName": "B.",
+      "suffix": "",
+      "prefix": "Mrs.",
+      "fullName": "Mrs. Lusita B. Sabalburo ",
+      "role": "Science",
+      "pic": "http://stellamariscollegeqc.edu.ph/wp-content/uploads/2021/03/199006002.jpg",
+      "description": "not set",
+      "nextRow": ""
+    },
+    "TLEICT": {
+      "firstName": "Marie Paz Claire",
+      "lastName": "Gallardo",
+      "middleName": "S.",
+      "suffix": "",
+      "prefix": "Ms.",
+      "fullName": "Ms. Marie Paz Claire S. Gallardo ",
+      "role": "TLE / ICT",
+      "pic": "http://stellamariscollegeqc.edu.ph/wp-content/uploads/2021/03/200106002.jpg",
+      "description": "not set",
+      "nextRow": ""
+    }
+  },
+  "DepartmentHeads": {
+    "AcademicChair": {
+      "firstName": "Edna",
+      "lastName": "Oxales",
+      "middleName": "B.",
+      "suffix": "",
+      "prefix": "Mrs.",
+      "fullName": "Mrs. Edna B. Oxales ",
+      "role": "Academic Chair",
+      "pic": "http://stellamariscollegeqc.edu.ph/wp-content/uploads/2021/03/199606001-1.jpg",
+      "description": "not set",
+      "nextRow": ""
+    },
+    "GuidanceChair": {
+      "firstName": "Nila",
+      "lastName": "Castro",
+      "middleName": "",
+      "suffix": "",
+      "prefix": "Ms.",
+      "fullName": "Ms. Nila  Castro ",
+      "role": "Guidance Chair",
+      "pic": "http://stellamariscollegeqc.edu.ph/wp-content/uploads/2021/03/200306001.jpg",
+      "description": "not set",
+      "nextRow": ""
+    },
+    "OSAChair": {
+      "firstName": "Alejo Leobort",
+      "lastName": "Coronel",
+      "middleName": "M.",
+      "suffix": "",
+      "prefix": "Mr.",
+      "fullName": "Mr. Alejo Leobort M. Coronel ",
+      "role": "OSA Chair",
+      "pic": "http://stellamariscollegeqc.edu.ph/wp-content/uploads/2021/03/201206002.jpg",
+      "description": "not set",
+      "nextRow": "nextRow"
+    },
+    "HRO": {
+      "firstName": "Frcille",
+      "lastName": "Jongco",
+      "middleName": "T.",
+      "suffix": "",
+      "prefix": "Ms.",
+      "fullName": "Ms. Frcille T. Jongco ",
+      "role": "Human Resource Officer",
+      "pic": "http://stellamariscollegeqc.edu.ph/wp-content/uploads/2021/03/200511001.jpg",
+      "description": "not set",
+      "nextRow": ""
+    },
+    "Registrar": {
+      "firstName": "Jeniffer",
+      "lastName": "Martin",
+      "middleName": "B.",
+      "suffix": "",
+      "prefix": "Ms.",
+      "fullName": "Ms. Jeniffer B. Martin ",
+      "role": "Registrar",
+      "pic": "http://stellamariscollegeqc.edu.ph/wp-content/uploads/2021/03/199805001.jpg",
+      "description": "not set",
+      "nextRow": ""
+    },
+    "AccountingHead": {
+      "firstName": "Marichel",
+      "lastName": "Mateo",
+      "middleName": "M.",
+      "suffix": "",
+      "prefix": "Ms.",
+      "fullName": "Ms. Marichel M. Mateo ",
+      "role": "Accounting Head",
+      "pic": "http://stellamariscollegeqc.edu.ph/wp-content/uploads/2021/03/201505001.jpg",
+      "description": "not set",
+      "nextRow": ""
+    }
+  }
+}

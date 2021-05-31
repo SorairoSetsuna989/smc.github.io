@@ -1,0 +1,36 @@
+body { background-image: url("../img/about_3.JPG"); }
+
+.grid-container {
+    grid-template-columns: 0.75fr;
+    margin:2vh 2vw;
+    font-size: 0.8em;
+    text-align: left;
+}
+
+.grid-item {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.grid-item-0 {
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+.grid-item:not(.grid-item-0) {
+    background-color: white;
+    color: #25245D;
+    text-align: justify;
+}
+
+.inner {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    padding: 2vh 1vw;
+    border-radius: 13px;
+}
+
+@media screen and (max-width: 700px) {
+    .grid-container > * {  font-size: 0.85em;  }
+    .grid-item:not(.grid-item-0) { margin-bottom: 5vW; }
+}

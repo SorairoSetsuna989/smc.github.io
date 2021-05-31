@@ -1,0 +1,54 @@
+.grid-item { opacity: 100%; }
+
+.grid-item .NewLearn { display:none; }
+
+/* Background images for each grid */
+.grid-item-1 { background-image: url(../img/history.jpg); }
+.grid-item-2 { background-image: url(../img/about_2.JPG); }
+.grid-item-3 { background-image: url(../img/collections.jpg); }
+.grid-item-4 { background-image: url(../img/about_6.JPG); }
+.grid-item-6 { background-image: url(../img/officials_2.JPG); }
+.grid-item-5 {
+  background-image: url(../img/motto_seal.png);
+  background-size: contain;
+}
+
+
+/* Hover states */
+@media (hover: hover) {
+  .grid-item:hover .gridtitle { opacity: 100%; }
+  .grid-item:hover .NewTitle { display:none; }
+  .grid-item:hover .NewLearn { display:block; }
+
+  .grid-item-2:hover { background-image: url(../img/about_1.JPG); }
+  .grid-item-4:hover { background-image: url(../img/about_61.JPG); }
+  .grid-item-6:hover { background-image: url(../img/officials_3.JPG); }
+}
+
+/* PC Mode */
+@media screen and (min-width: 700px) {
+  a { color:#25245D; }
+
+  .grid-container {
+      margin-left: 2vmin;
+      padding: 16px 12px 12px 12px;
+      grid-gap: 20px;
+      grid-template-columns: 0.5fr 0.5fr;
+      grid-auto-rows: 60vh;
+      font-size: 0.9em;
+    }
+
+  .readmore { padding-left: 30vw; }
+  .NewLearn {  text-align: right;  }
+}
+
+/* Mobile Mode */
+@media screen and (max-width: 700px) {
+  .grid-container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .caption { opacity: 80%; }
+}

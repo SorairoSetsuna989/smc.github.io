@@ -1,0 +1,95 @@
+
+.grid-container {
+    grid-template-columns: 85vw;
+    margin: 2vh 2vw;
+}
+
+.grid-item { opacity: 100%; }
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    margin: 6vh 4vw;
+}
+
+/* Post Template */
+.post {
+    display: grid;
+    background:none;
+    color: #25245D;
+    background-color: white;
+    border-radius: 8px;
+    margin: 2vh 2vw;
+    padding: 3vh 1vw;
+}
+
+.text { grid-column: 1 / 2; }
+
+.text p { font-size: 0.6em; }
+
+/* Grid sizing depending on post type */
+
+.sj-article { grid-column: 1 / 2; }
+
+.article-head > img {
+    display: block;
+    border-radius: 50%;
+    height: 100%;
+}
+
+.article-head > * {
+    text-align: left;
+}
+
+.post-body { 
+    text-align: center; 
+    background-color: white;
+}
+
+/* Insert other post types before this line */
+.post-title { font-size: 0.7em; }
+
+.post-title > * { display: inline; }
+
+.article-head > * { 
+    text-align: center;
+    height: 10%;
+}
+
+.article-contents p {
+    text-align: justify;
+    font-size: 0.7em;
+    padding: 2vh 2vw;
+    text-indent: 4vw;
+}
+
+.article-foot img {
+    width: 15%;
+    border-radius: 50%;
+}
+
+.image-caption p {
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+.images img {
+    width: 100%;
+}
+@media screen and (max-width: 700px) {
+    .grid-container {
+        grid-template-columns: 1fr !important;
+    }
+
+    .grid-item-b {
+        background: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .posts { margin: 4vh 2vw; }
+
+    .article-head, .article-contents p { font-size: 0.8em; }
+
+    .article-foot img { width: 40%; }
+}

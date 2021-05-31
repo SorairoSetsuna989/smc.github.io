@@ -1,0 +1,32 @@
+@media screen and (min-width: 700px) {
+  .grid-container {
+    grid-template-columns: 45vw 45vw;
+    grid-template-rows: 50vh;
+    font-size: 0.9em;
+    text-align: center;
+  }
+  
+  .grid-item {
+    padding: 4px 2px 4px 2px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .grid-container-3 {
+    grid-template-columns: 0.45fr 0.45fr !important;
+  }
+
+  .grid-item-a, .grid-item-b { 
+    font-size: 0.9em;
+    text-align: center;
+    padding: 1vh 1vw;
+  }
+  .grid-item-a { grid-column: 1 / 2 !important ; }
+  .grid-item-b { grid-column: 2 / 3 !important ; }
+
+  .grid-item {
+    opacity: 90%;
+  }
+}

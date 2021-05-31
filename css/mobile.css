@@ -1,0 +1,22 @@
+@media screen and (max-width: 700px) {
+  
+  #header-art { display: none; /* height: 30vh; */ }
+
+  .grid-container {
+    font-size: 0.65em;
+    grid-template-columns: 0.9fr;
+    grid-gap: 3vw;
+    grid-auto-rows: auto;
+  }
+
+  .grid-item {
+    opacity: 100%;
+    grid-column: 1 / -1;
+  }
+
+  .grid-item-0 { font-size: 0.8em; }
+  .grid-item .caption {display: block;}
+  .grid-left { text-align: left; }
+  
+  .grid-item-pic, .grid-pic { display: none !important; }
+}

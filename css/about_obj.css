@@ -1,0 +1,49 @@
+body {
+    background-image: url(../img/about_1.JPG);
+    background-position: top;
+    background-size: cover;
+}
+
+.grid-item:not(.grid-item-0) {
+    background: none;
+    color: #25245D;
+}
+
+.grid-item h3 {
+    background-color:wheat;
+    padding: 2vh 2vw;
+    border-radius: 8px;
+    text-align: center;
+}
+
+li {
+    padding-top:2vh;
+    padding-bottom:2vh;
+}
+
+.flex-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 1vh 2vw;
+}
+
+.flex-list li {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 7vh;
+    padding: 3vh 2vw;
+}
+
+@media screen and (min-width: 700px) {
+    .grid-container {
+        font-size: 0.8em;
+        text-align: center;
+        margin:1vmin;
+        grid-template-columns: 0.45fr 0.45fr;
+    }
+
+    .grid-list { text-align: left; }
+}
+
+.grid-item { padding: 2vmin; }

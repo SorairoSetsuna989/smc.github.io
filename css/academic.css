@@ -1,0 +1,117 @@
+.grid-item { opacity: 100%; }
+
+.grid-container-1 .grid-item:not(.grid-item-0) { height: 45vh; }
+.grid-container { margin: 3vh 2vw}
+@media screen and (min-width: 700px) {
+
+  .grid-container-3 {
+    grid-template-columns: 45fr 45fr;
+    text-align: justify;
+    grid-template-rows: 40vh;
+  }
+
+  .grid-container-1 { grid-template-columns: 45vw 45vw; }
+  .grid-container-2 { grid-template-columns: 0.65fr 0.35fr; }
+
+  .grid-container-2 .grid-item:not(.grid-item-0) {
+    padding-top: 6vh;
+    padding-bottom: 8vh;
+    padding-left: 6vw;
+    padding-right: 10vw;
+    text-align: justify;
+  }
+
+  .grid-item {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+  }
+
+  .grid-container-3 .grid-item { cursor: pointer;  }
+
+  .readmore { padding-left: 20vw;}
+
+  .grid-left {
+    text-align: left;
+    grid-column: 1 / 2;
+  }
+
+  .grid-pic, .grid-right { grid-column: 2 / 3; }
+
+  .grid-item-9 {
+    font-size: 0.9em;
+    padding:0;
+  }
+}
+
+.grid-item {
+  overflow: hidden;
+}
+.grid-item-a div {
+  background-position:center;
+  height: 80%;
+/*   background-size: contain;
+  background-image: url(../img/announcement7.jpg); */
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  -ms-transform: translateY(-10%);
+  transform: translateY(-10%);
+}
+
+.grid-item-1 {
+  background-image: url();
+}
+.grid-item-2 {
+  background-image: url();
+}
+.grid-item-3 {
+  background-image: url(../img/sc_1.JPG);
+}
+.grid-item-4 {
+  background-image: url(../img/DSC00507.JPG);
+}
+
+.grid-item-6 {
+  background-image: url(../img/cvif.JPG);
+}
+
+.grid-item-8 {
+  background-image: url(../img/aca_4.JPG);
+}
+
+.grid-item-9 li { padding: 1vmin; }
+
+.grid-item-10 { background-image: url(); }
+
+@media screen and (max-width: 700px) {
+  .grid-container-3 { text-align: center;}
+  .grid-item-5 {  background-image: url(../img/cvif.JPG); }
+  .grid-item-7 { background-image: url(../img/aca_4.JPG); }
+  .grid-item-9 { background-image: url(); }
+  .grid-item-5, .grid-item-7, .grid-item-9 { padding: 5vh 0;}
+  .grid-item-0 {display: none !important;}
+  .grid-left div { 
+    background-color: white;
+    color:#25245D;
+    opacity: 70%;
+  }
+  div > p {
+    opacity: 100%;
+    margin: 2vh 0;
+    padding: 2vh 2vw;
+    font-size: 1em;
+  }
+
+  .grid-container-3 {
+    grid-template-columns: 0.45fr 0.45fr !important;
+  }
+
+  .grid-item-a, .grid-item-b { 
+    font-size: 0.9em;
+    text-align: center;
+    padding: 1vh 1vw;
+  }
+  .grid-item-a { grid-column: 1 / 2 !important ; }
+  .grid-item-b { grid-column: 2 / 3 !important ; }
+}
