@@ -38,7 +38,7 @@ function stickNav() { // Add the sticky class to the navbar when you reach its s
 function createNavBar() {
   let SetLinks = [ //Navigation bar html code
     '<div class="nav-item" id="smc"><span>Stella </span><span style="font-family:magneto">Maris </span><span>College</span></div>',
-    '<a class="nav-item main-link" href="../">Home</a>',
+    '<a class="nav-item main-link" href="https://sorairosetsuna989.github.io/smc.github.io/">Home</a>',
     '<div class="nav-item nav-dropdwn nav-drop1" title="See about overview"><a class="main-link" href="about.html">About Us <i class="fa fa-caret-down"></a></div>',
     '<div class="nav-item nav-dropdwn nav-drop2" title="See academic overview"><a class="main-link" href="academic.html">Academic <i class="fa fa-caret-down"></a></div>',
     '<a class="nav-item main-link" href="admissions.html">Admissions</a>',
