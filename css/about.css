@@ -13,7 +13,7 @@
 }
 
 /* Mobile Mode */
-@media screen and (max-width: 700px) and (orientation: portrait) {
+@media screen and (max-width: 768px) and (orientation: portrait) {
 
   .grid-container {
     display: flex;
@@ -36,7 +36,7 @@
 }
 
 /* PC Mode */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   a { color:#25245D; }
 
   .grid-container {
@@ -51,5 +51,5 @@
   .readmore { padding-left: 30vw; }
   .NewLearn {  text-align: right;  }
 
-  .caption-3, .caption-4 { opacity: 0% !important; }
+  .caption-3, .caption-4, .caption-5 { opacity: 0% !important; }
 }

@@ -84,7 +84,7 @@
   display: none;
   position: fixed; /* Stay in place */
   z-index: 700; /* Sit on top */
-  padding-top: 40px; /* Location of the box */
+  padding-top: 8vh; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -111,7 +111,7 @@
   to {transform:scale(1)}
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .modal-content {
     padding-top: 15vh;
     width: 85%;
@@ -126,7 +126,12 @@
 
 }
 
-@media screen and (max-width: 700px) and (orientation: portrait) {
+@media screen and (max-width: 768px) {
+  .modal {
+    padding-top: 40px; /* Location of the box */
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
   .container { margin: 1vh 2vw }
   .slider-inner{ width: 80%; }
 
@@ -136,7 +141,7 @@
 
 }
 
-@media screen and (max-width: 700px) and (orientation: landscape){
+@media screen and (max-width: 768px) and (orientation: landscape){
   .container { margin: 1% 10% }
   .modal-content {
     padding-top: 0;

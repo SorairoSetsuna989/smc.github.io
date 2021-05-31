@@ -2,7 +2,7 @@
 
 .grid-container-1 .grid-item:not(.grid-item-0) { height: 45vh; }
 .grid-container { margin: 3vh 2vw}
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
 
   .grid-container-3 {
     grid-template-columns: 45fr 45fr;
@@ -84,7 +84,7 @@
 
 .grid-item-10 { background-image: url(); }
 
-@media screen and (max-width: 700px) and (orientation: portrait) {
+@media screen and (max-width: 768px) and (orientation: portrait) {
 
   .grid-container-3 { text-align: center;}
   .grid-item-5 {  background-image: url(../img/cvif.JPG); }

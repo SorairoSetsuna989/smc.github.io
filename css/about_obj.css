@@ -35,7 +35,7 @@ li {
     padding: 3vh 2vw;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
     .grid-container {
         font-size: 0.8em;
         text-align: center;

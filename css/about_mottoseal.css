@@ -18,7 +18,7 @@ body { background-image: url("../img/about_3.JPG"); }
 .grid-item > * { text-align: center; }
 .grid-item-4 > *:not(h3) { text-align: justify; }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
 
     .grid-container {
         grid-template-columns: 0.80fr;
@@ -68,7 +68,7 @@ body { background-image: url("../img/about_3.JPG"); }
     .grid-item:hover{ opacity: 100%; }
 }
 
-@media screen and (max-width: 700px) and (orientation: portrait) {
+@media screen and (max-width: 768px) and (orientation: portrait) {
 
     .grid-item-1 img {
         width: 50%;

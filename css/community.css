@@ -1,40 +1,45 @@
 
 body { background-image: url("../img/home-page.jpg"); }
+.grid-item-b { background: none; }
 
-@media screen and (max-width: 700px) and (orientation: portrait) {
+@media screen and (max-width: 768px) {
 
-    .grid-container { grid-template-columns: 0.9fr !important; }
+    .posts { margin: 6vh 1vw; }
+}
 
-    .grid-item-b { background: none; }
+@media screen and (max-width: 768px) and (orientation: portrait) {
 
-    .posts { margin: 4vh 2vw; }
+/*     .grid-container { grid-template-columns: 90vw !important; }
+ */
+
+    .posts { margin: 4vh 1vw; }
 
     .article-head, .article-contents p { font-size: 0.8em; }
 
     .article-foot img { width: 40%; }
 }
 
-@media screen and (max-width: 700px) and (orientation: landscape) {
+@media screen and (max-width: 768px) and (orientation: landscape) {
     .grid-container { grid-template-columns: 1fr; }
 }
 
-.grid-container {
-    grid-template-columns: 85vw;
-    margin: 2vh 2vw;
-    font-family: 'Times New Roman';
-}
+@media screen and (min-width: 768px) {
 
+    .grid-container {
+        grid-template-columns: 85vw;
+        margin: 2vh 2vw;
+        font-family: 'Times New Roman';
+    }
+
+    .posts {
+        display: flex;
+        flex-direction: column;
+        margin: 6vh 4vw;
+    }
+}
 .grid-item { opacity: 100%; }
 
-.grid-item-b {
-    background: none;
-}
 
-.posts {
-    display: flex;
-    flex-direction: column;
-    margin: 6vh 4vw;
-}
 
 /* Post Template */
 .post {
@@ -43,13 +48,13 @@ body { background-image: url("../img/home-page.jpg"); }
     color: #25245D;
     background-color: white;
     border-radius: 8px;
-    margin: 2vh 2vw;
+    margin: 6vh 2vw;
     padding: 3vh 1vw;
 }
 
 .text { grid-column: 1 / 2; }
 
-.text p { font-size: 0.6em; }
+.text p { font-size: 0.7em; }
 
 /* Grid sizing depending on post type */
 .sj-article { grid-column: 1 / 2; }
@@ -79,7 +84,7 @@ body { background-image: url("../img/home-page.jpg"); }
 
 .article-contents p {
     text-align: justify;
-    font-size: 0.7em;
+    font-size: 0.75em;
     padding: 2vh 2vw;
     text-indent: 4vw;
 }
@@ -90,11 +95,9 @@ body { background-image: url("../img/home-page.jpg"); }
 }
 
 .image-caption p {
-    text-align: justify;
-    font-size: 0.8em;
+    text-align: center;
+    font-size: 1em;
 }
 
-.images img {
-    width: 100%;
-}
+.images img { width: 100%; }
 

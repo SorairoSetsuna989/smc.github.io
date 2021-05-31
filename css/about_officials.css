@@ -4,7 +4,7 @@ body { background-image: url("../img/officials_bg.JPG"); }
 
 .grid-mid { background-color: rgb(90, 225, 255); }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .grid-container {
       font-size: 0.8em;
       text-align: center;
@@ -90,7 +90,7 @@ body { background-image: url("../img/officials_bg.JPG"); }
   }
 
 /* mobile version */
-@media screen and (max-width: 700px) and (orientation: portrait) {
+@media screen and (max-width: 768px) and (orientation: portrait) {
 
 
   .grid-container { grid-template-columns: 0.75fr; }

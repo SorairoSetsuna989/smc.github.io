@@ -85,23 +85,23 @@ li:hover:not(.left-item) { color: red; }
   .grid-item:hover > .caption{ opacity: 80%; } /* Transparent text box effect */
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   /* Fix for bug in mobile version */
   #header-art {  height: 40vh; }
   .mobile-learn { display: none; }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   * { font-size: 0.9em; }
 }
 
-@media screen and (max-width: 700px) and (orientation: portrait) {
+@media screen and (max-width: 768px) and (orientation: portrait) {
 
   .mobile-learn { display:block; }
   .readmore { display: none;}
 
 }
 
-@media screen and (max-width: 700px) and (orientation: landscape) {
+@media screen and (max-width: 768px) and (orientation: landscape) {
   
 }

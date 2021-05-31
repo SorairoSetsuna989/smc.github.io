@@ -7,6 +7,12 @@
     padding: 1vh 2vw;
   }
 
+  ul {
+    list-style:circle !important; 
+    text-align: left ;
+    padding-left: 15vw;
+  }
+
 @media screen {
   .readmore { padding-left: 20vw; }
 
@@ -24,13 +30,14 @@
   .grid-item-4 { background-image: url(../img/); }
 }
 
-
-
-@media screen and (max-width: 700px) and (orientation: landscape) {
+@media screen and (max-width: 768px) {
 
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 768px) and (orientation: landscape) {
+}
+
+@media screen and (min-width: 768px) {
   body { 
     background-image: url("../img/history_2.jpg");
     background-size: 125%; 
