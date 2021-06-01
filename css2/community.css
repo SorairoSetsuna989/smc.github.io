@@ -92,6 +92,7 @@
     height: 10%;
 }
 
+.article-contents { font-size: 1em; }
 .article-contents p {
     text-align: justify;
     font-size: 0.9em;
