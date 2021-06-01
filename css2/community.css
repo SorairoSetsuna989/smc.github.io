@@ -2,7 +2,10 @@
 /* For All Screens */
 @media screen {
     body { background-image: url("../img/home-page.jpg"); }
-    .grid-item-b { background: none; }
+    .grid-item-b { 
+        background: none;
+        opacity: 90%;
+    }
 
 /* Post Template */
 .post {
