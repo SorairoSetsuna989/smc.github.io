@@ -14,7 +14,7 @@
 @media screen and (max-width: 768px) and (orientation: portrait) {
     .posts { margin: 4vh 1vw; }
 
-    .article-head, .article-contents p { font-size: 0.7em; }
+    .article-head, .article-contents p { font-size: 0.9em; }
 
     .article-foot img { width: 40%; }
 }
