@@ -14,7 +14,7 @@
 @media screen and (max-width: 768px) and (orientation: portrait) {
     .posts { margin: 4vh 1vw; }
 
-    .article-head, .article-contents p { font-size: 0.8em; }
+    .article-head, .article-contents p { font-size: 0.7em; }
 
     .article-foot img { width: 40%; }
 }
@@ -64,7 +64,7 @@
 
 .text { grid-column: 1 / 2; }
 
-.text p { font-size: 0.7em; }
+.text p { font-size: 0.9em; }
 
 /* Grid sizing depending on post type */
 .sj-article { grid-column: 1 / 2; }
