@@ -91,8 +91,8 @@ var AboutList = [
 ];
 
 var AcademicList = [
-  "<a class='list-item' href='academic.html#gd2'>Programs Offered</a>",
-  "<a class='list-item' href='academic.html#gd3'>Instructional Program</a>",
+  "<a class='list-item' href='academic.html#gd1'>Programs Offered</a>",
+  "<a class='list-item' href='academic.html#gd2'>Instructional Program</a>",
 ];
 
 $(".nav-dropdwn").append('<div class="dropdown-content"></div>');
