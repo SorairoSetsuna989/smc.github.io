@@ -1,0 +1,112 @@
+/* For All Screens */
+@media screen {
+    body { background-image: url("../img/history_bg.jpg"); }
+
+    p {
+        font-family: 'Times New Roman';
+        text-align:justify;
+    }
+
+    .left-item {
+        background-color: #25245D;
+        border-radius: 8px;
+        padding-top: 3vh;
+        padding-bottom: 1vh;
+        padding-left: 2vh;
+        font-size: 0.9em;
+    }
+
+    .left-grid {
+        display: grid;
+        grid-gap: 2vmin;
+    }
+    
+    .current {
+        background-color: lightskyblue;
+        color:#25245D;
+    }
+}
+
+/*  For all mobile screens */
+@media screen and (max-width: 768px) {
+    .left-grid { text-align: center; }
+    .left-item { padding: 1vh 1vw; }
+    .grid-mid {
+        color: #25245D;
+        background-color: white;
+        opacity: 85%;
+    }
+
+    .grid-container { row-gap: 10vw; }
+    .content { display: none;}
+}
+
+/*  For all mobile screens in portrait mode */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+
+}
+
+/*  For all mobile screens in landscape mode*/
+@media screen and (max-width: 768px) and (orientation: landscape){
+
+}
+
+/* For all desktop */
+@media screen and (min-width: 768px) {
+    .grid-item-3 { background-image: url(../img/history_1.jpg); }
+    .grid-item-7 { background-image: url(../img/); }
+    .grid-item-9 { background-image: url(../img/history_3.jpg); }
+    .grid-item-11 { background-image: url(../img/history.jpg); }
+    .content { font-size: 1.1em; }
+
+    .grid-container {
+        font-size: 0.8em;
+        text-align: center;
+        grid-template-columns: 0.15fr 0.45fr 0.30fr;
+        margin:1vmin;
+        justify-self: middle;
+    }
+
+    .grid-item { padding: 10px;}
+
+    .grid-item-1 {
+        background: none;
+        position:relative;
+        justify-self: center;
+    }
+
+    .grid-left {
+        height: max-content;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        background:none;
+        text-align: left;
+    }
+
+    .grid-mid {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        font-size: 1.05em;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        text-align: justify;
+        background-color: white;
+        color:#25245D;
+    }
+
+    .row-2 { grid-row-start: 2; }
+    .row-3 { grid-row-start: 3; }
+
+    .grid-item-pic {
+        background-size: cover;
+        background-position-y:translateY(20%) ;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        background-color: lightskyblue;
+    }
+}
+
+/* For all hovering capable screens */
+@media (hover: hover) {
+
+}

@@ -1,0 +1,70 @@
+
+/* For All Screens */
+@media screen {
+    body {  background-image: url(../img/sc_2.jpg);  }
+    li { padding:1vmin; }
+    .grid-item {
+        padding: 3vmin;
+        transition: ease 0.5s;
+    }
+
+    .grid-item {
+        color: #25245D;
+        background-color: white;
+    }
+}
+
+/*  For all mobile screens */
+@media screen and (max-width: 768px) {
+    .grid-item { margin: 4vh 2vw; }
+}
+
+/*  For all mobile screens in portrait mode */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+
+}
+
+/*  For all mobile screens in landscape mode*/
+@media screen and (max-width: 768px) and (orientation: landscape){
+
+}
+
+/* For all desktop */
+@media screen and (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 40vw 50vw;
+        grid-template-rows: 70vh;
+        row-gap: 12vmin;
+        column-gap: 4vmin;
+        margin: 2vmin;
+    }
+
+    .grid-text {
+        text-align: justify;
+        padding: 4vmin;
+    }
+
+    .grid-item-3 {
+        grid-column-start: 1;
+        grid-column-end: -1;
+        font-size: 0.8em;
+    }
+
+    .grid-pic {
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+        background-position: center;
+    }
+
+    .grid-pic-1 { background-image: url(../img/about_5.jpg); }
+
+}
+
+/* For all hovering capable screens */
+@media (hover: hover) {
+    .grid-item-1:hover ~ .grid-pic-1 {
+        background-image: url(../img/about_3.jpg);
+        background-size: cover;
+    }
+}

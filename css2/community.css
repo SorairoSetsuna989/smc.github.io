@@ -1,0 +1,112 @@
+
+/* For All Screens */
+@media screen {
+    body { background-image: url("../img/home-page.jpg"); }
+    .grid-item-b { background: none; }
+}
+
+/*  For all mobile screens */
+@media screen and (max-width: 768px) {
+    .posts { margin: 6vh 1vw; }
+}
+
+/*  For all mobile screens in portrait mode */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .posts { margin: 4vh 1vw; }
+
+    .article-head, .article-contents p { font-size: 0.8em; }
+
+    .article-foot img { width: 40%; }
+}
+
+/*  For all mobile screens in landscape mode*/
+@media screen and (max-width: 768px) and (orientation: landscape){
+    .grid-container { grid-template-columns: 1fr; }
+
+}
+
+/* For all desktop */
+@media screen and (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 85vw;
+        margin: 2vh 2vw;
+        font-family: 'Times New Roman';
+    }
+
+    .posts {
+        display: flex;
+        flex-direction: column;
+        margin: 6vh 4vw;
+    }
+}
+
+/* For Desktop and landscape oriented mobile screens */
+@media screen and (min-width: 768px), (max-width: 768px) and (orientation: landscape ) {
+
+}
+
+/* For all hovering capable screens */
+@media (hover: hover) {
+
+}
+
+
+/* Post Template */
+.post {
+    display: grid;
+    background:none;
+    color: #25245D;
+    background-color: white;
+    border-radius: 8px;
+    margin: 6vh 2vw;
+    padding: 3vh 1vw;
+}
+
+.text { grid-column: 1 / 2; }
+
+.text p { font-size: 0.7em; }
+
+/* Grid sizing depending on post type */
+.sj-article { grid-column: 1 / 2; }
+
+.article-head > img {
+    display: block;
+    border-radius: 50%;
+    height: 100%;
+}
+
+.article-head > * { text-align: left; }
+
+.post-body { 
+    text-align: center; 
+    background-color: white;
+}
+
+/* Insert other post types before this line */
+.post-title { font-size: 0.7em; }
+
+.post-title > * { display: inline; }
+
+.article-head > * { 
+    text-align: center;
+    height: 10%;
+}
+
+.article-contents p {
+    text-align: justify;
+    font-size: 0.75em;
+    padding: 2vh 2vw;
+    text-indent: 4vw;
+}
+
+.article-foot img {
+    width: 15%;
+    border-radius: 50%;
+}
+
+.image-caption p {
+    text-align: center;
+    font-size: 1em;
+}
+
+.images img { width: 100%; }

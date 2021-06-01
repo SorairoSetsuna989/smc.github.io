@@ -1,0 +1,130 @@
+
+/* For All Screens */
+@media screen {
+    #header-art {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    body {
+        margin:0;
+        padding:0;
+        font-family: arial;
+        font-size: 1.8em;
+        background-position-x: middle;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    a { text-decoration:none; }
+    .flex-container { display: flex; }
+
+    .grid-container { 
+      display: grid;
+      justify-content: center;
+    }
+  
+    .grid-item {
+      border-radius: 10px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position:center;
+    }
+
+    .gridtitle { 
+      display:block; 
+      padding: 1vmin;
+      margin:0;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      opacity: 100%;
+    }
+    .grid-item-0 {
+        grid-column-start: 1;
+        grid-column-end: -1;
+        justify-self: center;
+        padding: 0 5vw;
+    }
+
+    .readmore { font-size: 0.6em; }
+
+    .caption {
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        position: relative;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 1.2em;
+        opacity: 0%;
+        margin: 8vh 0;
+      }
+}
+
+/*  For all mobile screens */
+@media screen and (max-width: 768px) {
+    * { font-size: 0.9em; }
+
+    #header-art { display: none; /* height: 30vh; */ }
+
+    .grid-container {
+      grid-template-columns: 0.95fr;
+      grid-gap: 3vw;
+      grid-auto-rows: auto;
+    }
+
+    .grid-item {
+        opacity: 90%;
+        grid-column: 1 / -1;
+      }
+
+    .grid-item-0 { font-size: 0.8em; }
+    .grid-item .caption {display: block;}
+    .grid-left { text-align: left; }
+    .grid-item-pic, .grid-pic { display: none !important; }
+}
+
+/*  For all mobile screens in portrait mode */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .mobile-learn { display:block; }
+    .readmore { display: none;}
+}
+
+/*  For all mobile screens in landscape mode*/
+@media screen and (max-width: 768px) and (orientation: landscape){
+
+}
+
+/* For all desktop */
+@media screen and (min-width: 768px) {
+    #header-art {
+        height: 40vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .mobile-learn { display: none; }
+    .content { display: none; }
+    .show-content { display: block; }
+
+    .grid-container { 
+        display: grid;
+        justify-content: center;
+        row-gap: 9vh;
+        column-gap: 4vw;
+      }
+
+      .grid-item {
+        transition: 0.6s;
+        opacity: 75%;
+      }
+}
+
+/* For all hovering capable screens */
+@media (hover: hover) {
+    li:hover:not(.left-item) { color: red; }
+    .grid-item:hover { opacity: 100%; }
+    .grid-item:hover > .caption{ opacity: 80%; } /* Transparent text box effect */  
+    .grid-item, .grid-item > * { transition: 0.6s; }
+    .grid-item > * {  opacity: 100%;  }
+
+}

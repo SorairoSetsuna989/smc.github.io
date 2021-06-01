@@ -1,0 +1,67 @@
+
+/* For All Screens */
+@media screen {
+    .grid-item { padding: 0;}
+    .grid-item img { width: 100%; height: 100%;}
+    img { 
+        border-radius: 8px;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/*  For all mobile screens */
+@media screen and (max-width: 768px) {
+
+}
+
+/*  For all mobile screens in portrait mode */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+
+    body > *:not(#orientation-msg) {
+        display: none;
+    }
+
+    #orientation-msg {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    #orientation-msg img {
+        width: 100%;
+    }
+}
+
+/*  For all mobile screens in landscape mode*/
+@media screen and (max-width: 768px) and (orientation: landscape){
+    .grid-container {
+        grid-template-columns: 0.8fr;
+        grid-auto-rows: 85vh;
+    }
+}
+
+/* For all desktop */
+@media screen and (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 0.7fr;
+        grid-auto-rows: 75vh;
+    }
+}
+
+/* For Desktop and landscape oriented mobile screens */
+@media screen and (min-width: 768px), (max-width: 768px) and (orientation: landscape ) {
+    #orientation-msg {
+        display: none;
+    }
+    .grid-item-0 {
+        display: flex;
+        justify-content: center;
+        margin: 4vh 25vw;
+    }
+}
+
+/* For all hovering capable screens */
+@media (hover: hover) {
+    .grid-item { cursor: pointer; }
+}

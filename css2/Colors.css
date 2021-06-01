@@ -1,0 +1,23 @@
+.gridtitle {
+    background-color: white;
+}
+
+body, .caption {
+    background-color: lightgray;
+}
+
+.grid-item {
+    background-color: #25245D;
+}
+
+.gridtitle, .caption {
+    color: #25245D;
+}
+
+.grid-item {
+    color: white;
+}
+
+.unk {
+    background-color: lightblue;
+}

@@ -1,0 +1,150 @@
+
+/* For All Screens */
+@media screen {
+    #navbar {
+        background-color: #25245D;
+        font-size: 0.9em;
+        overflow-x: hidden;
+        overflow-y: visible;
+        width: 100%;
+        z-index: 600;
+        margin: 0 0 4vh 0;
+        padding: 0;
+      }
+      
+    .nav-item {
+    color: #f2f2f2;
+    display: inline;
+    font-family: Helvetica;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 15px 10px 15px 10px;
+    margin-right: 5px;
+    }
+    
+    .nav-active {
+    background-color: lightskyblue;
+    color: #25245D;
+    border-radius: 8px;
+    }
+    .dropdown-content a:visited { color: inherit; }
+    
+    .content { padding: 16px; } /* Page content */
+      
+}
+
+/*  For all mobile screens */
+@media screen and (max-width: 768px) {
+    #navbar { display: none; } /* Disables desktop nav bar in mobile mode */
+
+    #mobilenav {
+      background-color: #25245D;
+      display: block;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 2vh;
+      font-size: 1em;
+    }
+  
+    #mobilenav #myLinks { display: none; }
+  
+    #mobilenav a {
+      color: white;
+      padding: 10px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+    }
+  
+    #mobilenav a.icon {
+      background-color: #25245D;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  
+    .nav-item {
+      padding: 5px;
+      font-size: 0.6em;
+      margin-right: 5px;
+    }
+}
+
+/*  For all mobile screens in portrait mode */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+
+}
+
+/*  For all mobile screens in landscape mode*/
+@media screen and (max-width: 768px) and (orientation: landscape){
+
+}
+
+/* For all desktop */
+@media screen and (min-width: 768px) {
+    #mobilenav { display: none; } /* disables mobilenav in desktop mode */
+
+    .sticky { /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      
+    /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+    .sticky + .content { padding-top: 50px; }
+    
+    .nav-item > * { color: white; }
+    
+    .nav-dropdwn {
+    float: left;
+    overflow: hidden;
+    }
+    
+    .dropdown-content {
+    background-color: white;
+    color:#25245D;
+    display: none;
+    font-size: 0.8em;
+    position:absolute;
+    z-index: 100;
+    margin-top:10px;
+    margin-bottom:10px;
+    text-align: left;
+    -ms-transform: translateX(-4%);
+    transform: translateX(-4%);
+    }
+    
+    .sticky .dropdown-content { position:fixed; }
+    
+    .dropdown-content a {
+    padding: 1vh 1vw;
+    }
+    
+    .list-item {
+    display: block;
+    padding: 2vh 2vw;
+    }
+}
+
+/* For all hovering capable screens */
+@media (hover: hover) {
+    .nav-item:hover:not(#smc) {
+        background-color:lightgray;
+        color: #25245D;
+        border-radius: 5px;
+        }
+    
+      .nav-dropdwn:hover .dropdown-content { display: block;}
+    
+      .nav-item:hover:not(#smc) > * { color: #25245D; } 
+    
+      #mobilenav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+    
+      .list-item:hover { background-color: wheat; };
+}
