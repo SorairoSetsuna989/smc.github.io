@@ -1,7 +1,29 @@
 [
-  "<div class=\"post-title 626f89-title\"></div><div class=\"post-body 626f89-body\"><div class=\"article-head\"><h3>Stellan's Journal Entry: This is a test post: 6</h3></div><div class=\"article-contents\"><p>Some text</p></div><div class=\"article-foot\"><h4>written by author</h4><img src=\"\"></div></div><div class=\"post-footer 626f89-footer\"></div>",
-  "<div class=\"post-title eb214c-title\"></div><div class=\"post-body eb214c-body\"><div class=\"article-head\"><h3>Stellan's Journal Entry: This is a test post: 7</h3></div><div class=\"article-contents\"><p>Some text</p></div><div class=\"article-foot\"><h4>written by author</h4><img src=\"\"></div></div><div class=\"post-footer eb214c-footer\"></div>",
-  "<div class=\"post-title e0d93a-title\"></div><div class=\"post-body e0d93a-body\"><div class=\"article-head\"><h3>Stellan's Journal Entry: This is a test post: 8</h3></div><div class=\"article-contents\"><p>Some text</p></div><div class=\"article-foot\"><h4>written by author</h4><img src=\"\"></div></div><div class=\"post-footer e0d93a-footer\"></div>",
-  "<div class=\"post-title 7a0c5c-title\"></div><div class=\"post-body 7a0c5c-body\"><div class=\"article-head\"><h3>Stellan's Journal Entry: This is a test post: 9</h3></div><div class=\"article-contents\"><p>Some text</p></div><div class=\"article-foot\"><h4>written by author</h4><img src=\"\"></div></div><div class=\"post-footer 7a0c5c-footer\"></div>",
-  "<div class=\"post-title f27fa0-title\"></div><div class=\"post-body f27fa0-body\"><div class=\"article-head\"><h3>Stellan's Journal Entry: This is a test post: 10</h3></div><div class=\"article-contents\"><p>Some text</p></div><div class=\"article-foot\"><h4>written by author</h4><img src=\"\"></div></div><div class=\"post-footer f27fa0-footer\"></div>"
+  [
+    "sj-article",
+    "author",
+    "",
+    "This is a test post: 5",
+    {
+      "Some Text": "p"
+    }
+  ],
+  [
+    "sj-article",
+    "author",
+    "",
+    "This is a test post: 6",
+    {
+      "Some Text": "p"
+    }
+  ],
+  [
+    "sj-article",
+    "author",
+    "",
+    "This is a test post: 7",
+    {
+      "Some Text": "p"
+    }
+  ]
 ]
