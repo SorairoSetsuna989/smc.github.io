@@ -62,9 +62,10 @@
     .grid-container {
         font-size: 0.8em;
         text-align: center;
-        grid-template-columns: 0.15fr 0.45fr 0.30fr;
-        margin:1vmin;
-        justify-self: middle;
+        grid-template-columns: 0 0.9fr;
+        justify-content: left;
+        column-gap: 1vw;
+        margin: 2vh 2vw;
     }
 
     .grid-item { padding: 10px;}
@@ -104,6 +105,23 @@
         grid-column-end: 4;
         background-color: lightskyblue;
     }
+
+    /* For testing purposes */
+    .flex-container {
+        display: grid;
+        grid-template-columns: 0.2fr 0.75fr;
+    }
+
+    .grid-item-0 {
+        display: flex;
+        justify-content: center;
+        margin: 4vh 25vw;
+    }   
+
+    .grid-left {
+        position:sticky;
+    }
+
 }
 
 /* For all hovering capable screens */

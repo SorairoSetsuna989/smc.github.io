@@ -3,10 +3,12 @@
 @media screen {
     body { background-image: url("../img/officials_bg.JPG"); }
 
-    .grid-mid { background-color: rgb(90, 225, 255); }
-    
-    .grid-item { opacity: 100%; }
+    .grid-item { 
+      opacity: 100%; 
+      margin: 1vh 0;
+    }
 
+    .grid-mid { background-color: rgb(90, 225, 255); }
     .current { color:yellow; }
     .content { display: none; }
 
@@ -101,9 +103,7 @@
         font-size: 0.8em;
         text-align: center;
         grid-template-columns: 0.20fr 0.75fr;
-        margin:1vmin;
-        grid-gap: 2vmin;
-        justify-self: middle;
+        margin:1vmin;      
     }
   
     .grid-item:not(.grid-item-0) { padding: 10px;}

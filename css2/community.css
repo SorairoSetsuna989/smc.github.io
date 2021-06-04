@@ -1,9 +1,10 @@
 
+
 /* For All Screens */
 @media screen {
     body { background-image: url("../img/home-page.jpg"); }
     .grid-item-b { 
-        background: none;
+        background: none; 
         opacity: 90%;
     }
 
@@ -67,6 +68,12 @@
 }
 
 .images img { width: 100%; }
+
+th { font-size: 0.6em; }
+td { font-size: 0.5em; /* text-align: left; */ }
+th, td {
+    border: 1px solid black;
+  }
 }
 
 /*  For all mobile screens */
