@@ -5,7 +5,7 @@ function Person(data = ["role", "fullname", "pic",""]) {
     //Object properties
     this.role = data[0];
     this.fullName = data[1];
-    this.pic = data[2]; //href
+    this.pic = "img/officials/" + data[2]; //href
     this.nextRow = data[3];
 
     // Object methods
