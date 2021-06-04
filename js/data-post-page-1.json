@@ -14,26 +14,11 @@
     }
   ],
   [
-    "sj-tab",
+    "sj-article",
     "Ma. Angelo S. Cabueñas",
     "",
     "Fratelli Tutti",
-    {
-      "table": [
-        ["Wrongdoings", "What we should do instead"],
-      ["Being materialistic and promoting the throw-away culture ", "We should only buy essential things such as food, water, and simple clothing, among others in order to produce less waste"],
-      ["Employing people and neglecting their rights", "We should respect other people’s rights because we have the same rights"],
-      ["Disrespecting and discriminating people who are older, poorer and have different skin colors", "We should always respect people regardless of their ethnicity, skin color, age and social status"],
-      ["Failure to become a Good Samaritan for our brothers and sisters who are in need", "We should help people in need because it is part of our mission"],
-      ["Abandoning our social duties which includes taking care of the environment ", "We should emphasize the need to look after the environment in schools"],
-      ["Denying the people the right to consume resources that they cannot afford", "We should be considerate and compassionate; those goods belong to them as much as they belong to us"],
-      ["Promoting the law of force", "We must promote the force of law"],
-      ["Desiring revenge and siding with evil ", "We should learn how to forgive"],
-      ["Starting wars and using nuclear weapons to eliminate millions of people", "We should stop attacking one another; we should utilize our resources and our knowledge for the common good"],
-      ["Promoting death penalty", "We should honor the sanctity of life especially since it is not ours to take"],
-      ["Lack of respect for people who have different religions", "We should respect people and their religions because it is their prerogative"]
-      ]
-    }
+    {"Insert Synopsis of activity": "P"}
   ],
   [
     "sj-article",
