@@ -1,0 +1,14 @@
+[
+    [
+        "author",
+        "",
+        "This is a test post: 6",
+        ["p", "This is a test post"]
+    ],
+    [
+        "SMC",
+        "smcicon.png",
+        "Ecobricks Project",
+        ["img","img/alumni1.jpg"] 
+    ]
+]
