@@ -39,12 +39,16 @@
 @media screen and (max-width: 768px) {
     #navbar { display: none; } /* Disables desktop nav bar in mobile mode */
 
+    body > :nth-child(4) { margin-top: 10vh; }
+
     #mobilenav {
       background-color: #25245D;
       display: block;
       overflow: hidden;
-      position: relative;
-      margin-bottom: 2vh;
+      width: 100%;
+      position: fixed;
+      top:0;
+      z-index: 999;
       font-size: 1em;
     }
   
@@ -80,7 +84,7 @@
 
 /*  For all mobile screens in landscape mode*/
 @media screen and (max-width: 768px) and (orientation: landscape){
-
+  body > :nth-child(4) { margin-top: 20vh; }
 }
 
 /* For all desktop */

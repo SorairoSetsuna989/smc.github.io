@@ -25,6 +25,15 @@
         background-color: lightskyblue;
         color:#25245D;
     }
+
+    .grid-item-0 {
+        display: flex;
+        justify-content: center;
+        margin: 4vh 25vw;
+    }   
+    .flex-container {
+        width: 100%;
+    }
 }
 
 /*  For all mobile screens */
@@ -39,16 +48,22 @@
 
     .grid-container { row-gap: 10vw; }
     .content { display: none;}
+    .flex-container {
+        flex-direction: column;
+    }
+    .grid-left {
+        margin: 0 25vw 4vh 25vw;
+    }
 }
 
 /*  For all mobile screens in portrait mode */
 @media screen and (max-width: 768px) and (orientation: portrait) {
-
+    .grid-item-0 { margin: 4vh 2vw; }   
 }
 
 /*  For all mobile screens in landscape mode*/
 @media screen and (max-width: 768px) and (orientation: landscape){
-
+    .grid-item-0 { margin: 4vh 15vw; }   
 }
 
 /* For all desktop */
@@ -110,16 +125,6 @@
     .flex-container {
         display: grid;
         grid-template-columns: 0.2fr 0.75fr;
-    }
-
-    .grid-item-0 {
-        display: flex;
-        justify-content: center;
-        margin: 4vh 25vw;
-    }   
-
-    .grid-left {
-        position:sticky;
     }
 
 }

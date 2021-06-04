@@ -17,9 +17,6 @@
 
     .grid-container-1 .grid-item img { width: 100%; }
     .grid-container-2 .grid-item img { width: 40%; }
-
-    .grid-item-1 { background-image: url(); }
-    .grid-item-2 { background-image: url(); }
     .grid-item-a div {
         background-position:center;
         height: 80%;

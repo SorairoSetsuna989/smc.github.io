@@ -14,7 +14,7 @@
     
     .grid-item-2 { background-image: url(../img/sc_1.JPG); }
     .grid-item-3 { background-image: url(../img/alumni1.jpg); }  
-    .grid-item-4 { background-image: url(../img/); }
+    .grid-item-4 { background-image: url(../img/admissions.JPG); }
     .readmore { padding-left: 20vw; }
     .caption-3{ font-size: 1em; }
     .caption {
@@ -54,6 +54,7 @@
     }
   .caption {
     margin: 9vh 0;
+    opacity: 0%;
   }
 
   .grid-item-2  .caption, .grid-item-3 .caption { margin: 11vh 0; }

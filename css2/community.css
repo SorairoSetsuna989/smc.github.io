@@ -14,9 +14,42 @@
     background:none;
     color: #25245D;
     background-color: white;
+    grid-template-columns: 0.4fr 0.6fr;
     border-radius: 8px;
     margin: 6vh 2vw;
-    padding: 3vh 1vw;
+    padding: 3vh 2vw 3vh 0;
+}
+
+.post-head {
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.post-head p { margin: 0; }
+.post-link {
+    display: block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.post-body p {
+    font-size: 0.8em;
+    text-align: justify;
+}
+
+.post-body h4 {
+    margin: 1vh 1vw;
+}
+
+.post-body img {
+    width: 100%;
+    height: 70%;
+}
+
+.post-head img {
+    margin-top: 5vh;
+    width: 40%;
+    border-radius: 50%;
 }
 
 .text { grid-column: 1 / 2; }
@@ -26,74 +59,37 @@
 /* Grid sizing depending on post type */
 .sj-article { grid-column: 1 / 2; }
 
-.article-head > img {
-    display: block;
-    border-radius: 50%;
-    height: 100%;
 }
 
-.article-head > * { text-align: left; }
-
-.post-body { 
-    text-align: center; 
-    background-color: white;
-}
-
-/* Insert other post types before this line */
-.post-title { font-size: 0.7em; }
-
-.post-title > * { display: inline; }
-
-.article-head > * { 
-    text-align: center;
-    height: 10%;
-}
-
-.article-contents { font-size: 1em; }
-.article-contents p {
-    text-align: justify;
-    font-size: 0.9em;
-    padding: 2vh 2vw;
-    text-indent: 4vw;
-}
-
-.article-foot img {
-    width: 15%;
-    border-radius: 50%;
-}
-
-.image-caption p {
-    text-align: center;
-    font-size: 1em;
-}
-
-.images img { width: 100%; }
-
-th { font-size: 0.6em; }
-td { font-size: 0.5em; /* text-align: left; */ }
-th, td {
-    border: 1px solid black;
-  }
-}
 
 /*  For all mobile screens */
 @media screen and (max-width: 768px) {
-    .posts { margin: 6vh 1vw; }
+
+
 }
 
 /*  For all mobile screens in portrait mode */
 @media screen and (max-width: 768px) and (orientation: portrait) {
     .posts { margin: 4vh 1vw; }
+    h4 { text-align: center;}
+    .post {
+        padding: 2vh 3vw;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .post-body p {
+        font-family: 'Times New Roman' !important;
+        font-size: 1em;
+    }
 
-    .article-head, .article-contents p { font-size: 1em; }
+    .post-head > * { text-align: center;}
 
-    .article-foot img { width: 40%; }
+    .post-head img { width: 20%; }
 }
 
 /*  For all mobile screens in landscape mode*/
 @media screen and (max-width: 768px) and (orientation: landscape){
     .grid-container { grid-template-columns: 1fr; }
-
 }
 
 /* For all desktop */
@@ -105,9 +101,27 @@ th, td {
     }
 
     .posts {
-        display: flex;
+        display: grid;
+        grid-auto-rows: 80vh;
         flex-direction: column;
         margin: 6vh 4vw;
+    }
+
+    .container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
+      }
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
     }
 }
 

@@ -91,7 +91,9 @@
 
 /*  For all mobile screens in landscape mode*/
 @media screen and (max-width: 768px) and (orientation: landscape){
-
+  .grid-container { 
+    grid-template-columns: 0.75fr;
+  }
 }
 
 /* For all desktop */
@@ -102,7 +104,6 @@
         overflow: hidden;
     }
 
-    .mobile-learn { display: none; }
     .content { display: none; }
     .show-content { display: block; }
 
@@ -117,6 +118,11 @@
         transition: 0.6s;
         opacity: 75%;
       }
+}
+
+/* For Desktop and landscape oriented mobile screens */
+@media screen and (min-width: 768px), (max-width: 768px) and (orientation: landscape ) {
+  .mobile-learn { display: none; }
 }
 
 /* For all hovering capable screens */

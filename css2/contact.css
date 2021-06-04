@@ -49,6 +49,10 @@
 
 /*  For all mobile screens in landscape mode*/
 @media screen and (max-width: 768px) and (orientation: landscape){
+    .grid-container {
+        grid-template-columns: 0.90fr;
+    }
+
     .flex-container {
         display: grid;
         grid-template-columns: 0.45fr 0.45fr;
