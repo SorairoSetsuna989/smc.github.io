@@ -1,3 +1,5 @@
+var Today = new Date();
+
 export function export2txt(Name = "data", collection) {
     const a = document.createElement("a");
     a.href = URL.createObjectURL(new Blob([JSON.stringify(collection, null, 2)], {
@@ -11,25 +13,20 @@ export function export2txt(Name = "data", collection) {
     }
   }
 
-export function newDiv(element,setClasses = [],Text = "") {
-    let newDivElem = '<div class="';
-    let jQ = element;
-    setClasses.forEach((DivClass, i) => {
-        if (DivClass.includes(".")) {
-            DivClass = DivClass.slice(1);
-            jQ += " " + DivClass;
-        } else {
-            jQ += " ." + DivClass;
-        }
+export function newDiv(parent, classes = "",Text = "") {
+    let jQ = classes.split(" ");
+    let jSelect = parent.split(" ");
+    jQ.forEach((_class,i) => {
+        if (_class.startsWith(".") == false) { jQ[i] = `.${_class}`; }
+    })
 
-        newDivElem += `${DivClass}`;
+    jSelect.forEach((_sel, i) => {
+        if (_sel.startsWith(".") == false) { jSelect[i] = "." + _sel; }     
+    })
+    jSelect = jSelect.join();
 
-        if (i < setClasses.length - 1) {
-            newDivElem += " ";
-        }
-    });
-    newDivElem += `">${Text}</div>`;
-    /* console.log("Jquery Object: " + jQ); */
-    $(element).append(newDivElem);
-    return $(jQ);
+    $(parent).append(`<div class="${classes}">${Text}</div>`);
+
+    // returns the newly created div parent as jQ object
+    return $(`${parent} ${jQ.join()}`);
 }
