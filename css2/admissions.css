@@ -1,44 +1,50 @@
 
 /* For All Screens */
 @media screen {
-    .grid-item { padding: 0;}
+    .grid-item { 
+        padding: 0;
+        opacity: 100%;
+    }
     .grid-item img { width: 100%; height: 100%;}
     img { 
         border-radius: 8px;
         padding: 0;
         margin: 0;
     }
-}
+    
+    .grid-item-4 {
+        height: max-content !important;
+        background-color: skyblue;
+    }
 
-/*  For all mobile screens */
-@media screen and (max-width: 768px) {
-
+    /* Formatting of downloadable forms */
+    .flex-container { flex-direction: column; margin-left: 10%; }
+    li { margin: 2vh 0; }
+    li:hover { text-decoration: underline; }
+    li a { color: #25245D; }
 }
 
 /*  For all mobile screens in portrait mode */
 @media screen and (max-width: 768px) and (orientation: portrait) {
 
-    body > *:not(#orientation-msg) {
-        display: none;
-    }
-
+    body > *:not(#orientation-msg) { display: none; }
+    #orientation-msg img { width: 100%; }
     #orientation-msg {
         height: 100%;
         width: 100%;
         text-align: center;
     }
 
-    #orientation-msg img {
-        width: 100%;
-    }
 }
 
 /*  For all mobile screens in landscape mode*/
 @media screen and (max-width: 768px) and (orientation: landscape){
+    .grid-item-4 { font-size: 1.1em; }
     .grid-container {
         grid-template-columns: 0.8fr;
         grid-auto-rows: 85vh;
     }
+
 }
 
 /* For all desktop */
@@ -51,9 +57,7 @@
 
 /* For Desktop and landscape oriented mobile screens */
 @media screen and (min-width: 768px), (max-width: 768px) and (orientation: landscape ) {
-    #orientation-msg {
-        display: none;
-    }
+    #orientation-msg { display: none; }
     .grid-item-0 {
         display: flex;
         justify-content: center;
@@ -62,6 +66,4 @@
 }
 
 /* For all hovering capable screens */
-@media (hover: hover) {
-    .grid-item { cursor: pointer; }
-}
+@media (hover: hover) { .grid-item { cursor: pointer; } }

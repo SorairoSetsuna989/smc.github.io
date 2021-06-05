@@ -57,6 +57,10 @@
     opacity: 0%;
   }
 
+  .caption-2 p{
+    margin: 0 5vw;
+  }
+
   .grid-item-2  .caption, .grid-item-3 .caption { margin: 11vh 0; }
 }
 

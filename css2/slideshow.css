@@ -59,6 +59,7 @@
       font-size: 40px;
       font-weight: bold;
       transition: 0.3s;
+      z-index: 999;
     }
 
     .modal {
@@ -80,7 +81,6 @@
     .modal-content {
         margin: auto;
         display: block;
-        height: 80vh;
     }
     
     .modal-content {
