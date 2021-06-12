@@ -44,6 +44,7 @@
         grid-column-end: -1;
         justify-self: center;
         padding: 0 5vw;
+        opacity: 100% !important;
     }
 
     .readmore { font-size: 0.75em; }

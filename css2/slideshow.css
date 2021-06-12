@@ -2,7 +2,7 @@
 /* For All Screens */
 @media screen {
     .slider-inner img.active{ display:inline-block; }
-    .slider-inner, .slider-inner img { height:58vh; }
+    .slider-inner, .slider-inner img { height:70vh; }
     .prev, .next { z-index:100; }
 
     @keyframes zoom {
@@ -11,19 +11,19 @@
     }
 
     .container {
-        width:100%;
-        margin: 3vh 6vw 1vh;
-        overflow:auto;
+        width: 75vw;
+        margin-left: 10%;
+        overflow:hidden;
         justify-content: center;
     }
     
     
     .slider-inner{
-        width: 70%;
+        width: 90%;
         position:relative;
         overflow:hidden;
         float:left;
-        padding:3px;
+        padding: 1vh 1vw;
         border:#666 solid 1px;
     }
     
@@ -36,9 +36,10 @@
         float:left;
         margin-top:25vh;
         cursor: pointer;
-        font-size: 2em;
+        font-size: 4em;
+        text-shadow: 4px 4px 5px white;
     }
-    
+
     .prev{
         position:relative;
         margin-right:0;
@@ -89,6 +90,7 @@
     }
 
     .dot {
+        opacity: 100%;
         margin: 0 4px;
         background-color: #bbb;
         border-radius: 50%;
