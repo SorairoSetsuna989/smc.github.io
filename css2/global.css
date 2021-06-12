@@ -56,7 +56,6 @@
         border-radius: 8px;
         text-align: center;
         font-size: 1.2em;
-        opacity: 0%;
         margin: 8vh 0;
       }
 }
@@ -130,6 +129,7 @@
 @media (hover: hover) {
     li:hover:not(.left-item) { color: red; }
     .grid-item:hover { opacity: 100%; }
+    .caption { opacity: 0;}
     .grid-item:hover > .caption{ opacity: 80%; } /* Transparent text box effect */  
     .grid-item, .grid-item > * { transition: 0.6s; }
     .grid-item > * {  opacity: 100%;  }
