@@ -11,15 +11,15 @@
     }
 
     .container {
-        width: 75vw;
-        margin-left: 10%;
+        margin-left: -5%;
         overflow:hidden;
         justify-content: center;
+        display: flex;
     }
     
     
     .slider-inner{
-        width: 90%;
+        width: 70vw;
         position:relative;
         overflow:hidden;
         float:left;
@@ -102,13 +102,14 @@
         background-color: #717171;
         justify-content: center;
     }
+
+    #dothandler { margin-top: 1vh; }
 }
 
 /*  For all mobile screens */
 @media screen and (max-width: 768px) {
     /* Location of the box */
     .modal { padding-top: 40px; }
-    .container {  margin: 1vw 2vh; }
 
     .modal-content {
         padding-top: 15vh;
@@ -117,22 +118,29 @@
       }
     
     .dot {
-        height: 15px;
-        width: 15px;
+        height: 25px;
+        width: 25px;
     }
 }
 
 /*  For all mobile screens in portrait mode */
 @media screen and (max-width: 768px) and (orientation: portrait) {
-    .container { margin: 1vh 2vw }
-    .slider-inner{ width: 80%; }
+    .container { 
+        width: 100%; 
+        margin-left: 0;
+    }
+    .slider-inner { width: 90vw; }
     .slider-inner, .slider-inner img { height:30vh; }
-    .prev,.next{ margin-top: 12vh; }
+    .prev,.next{ 
+        /* margin-top: 8%; 
+        font-size: 2.5em;  removed these for now*/
+        display: none;
+    }
 }
 
 /*  For all mobile screens in landscape mode*/
 @media screen and (max-width: 768px) and (orientation: landscape){
-    .container { margin: 1% 10% }
+    .container {  margin-left: -8%; }
     .modal-content {
       padding-top: 0;
       width: 80%;
@@ -157,8 +165,8 @@
     }
 
     #myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
     }
 }
