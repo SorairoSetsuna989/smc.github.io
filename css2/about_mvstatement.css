@@ -15,22 +15,22 @@
 }
 
 /*  For all mobile screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
     .grid-item { margin: 4vh 2vw; }
 }
 
 /*  For all mobile screens in portrait mode */
-@media screen and (max-width: 768px) and (orientation: portrait) {
+@media screen and (max-width: 820px) and (orientation: portrait) {
 
 }
 
 /*  For all mobile screens in landscape mode*/
-@media screen and (max-width: 768px) and (orientation: landscape){
+@media screen and (max-width: 820px) and (orientation: landscape){
 
 }
 
 /* For all desktop */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 820px) {
     .grid-container {
         grid-template-columns: 40vw 50vw;
         grid-template-rows: 70vh;

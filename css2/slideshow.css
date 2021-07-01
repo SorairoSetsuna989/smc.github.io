@@ -57,31 +57,32 @@
       top: 15px;
       right: 35px;
       color: #f1f1f1;
-      font-size: 40px;
+      font-size: 64px;
       font-weight: bold;
       transition: 0.3s;
       z-index: 999;
     }
 
     .modal {
-    display: none;
-    position: fixed; /* Stay in place */
-    z-index: 700; /* Sit on top */
-    padding-top: 8vh; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        display: none;
+        position: fixed; /* Stay in place */
+        z-index: 800; /* Sit on top */
+        padding-top: 8vh; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
     }
-
 
     /* Modal Content (Image) */
     .modal-content {
         margin: auto;
         display: block;
+        width: 80%;
+        height: 90%;
     }
     
     .modal-content {
@@ -107,7 +108,7 @@
 }
 
 /*  For all mobile screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
     /* Location of the box */
     .modal { padding-top: 40px; }
 
@@ -124,7 +125,7 @@
 }
 
 /*  For all mobile screens in portrait mode */
-@media screen and (max-width: 768px) and (orientation: portrait) {
+@media screen and (max-width: 820px) and (orientation: portrait) {
     .container { 
         width: 100%; 
         margin-left: 0;
@@ -132,14 +133,12 @@
     .slider-inner { width: 90vw; }
     .slider-inner, .slider-inner img { height:30vh; }
     .prev,.next{ 
-        /* margin-top: 8%; 
-        font-size: 2.5em;  removed these for now*/
         display: none;
     }
 }
 
 /*  For all mobile screens in landscape mode*/
-@media screen and (max-width: 768px) and (orientation: landscape){
+@media screen and (max-width: 820px) and (orientation: landscape){
     .container {  margin-left: -8%; }
     .modal-content {
       padding-top: 0;
@@ -149,7 +148,7 @@
 }
 
 /* For all desktop */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 820px) {
     .dot {
         height: 25px;
         width: 25px;

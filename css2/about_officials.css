@@ -37,7 +37,7 @@
 }
 
 /*  For all mobile screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
     
     .grid-container {  grid-template-columns: 0.9fr; }
 
@@ -57,7 +57,7 @@
 }
 
 /*  For all mobile screens in portrait mode */
-@media screen and (max-width: 768px) and (orientation: portrait) {
+@media screen and (max-width: 820px) and (orientation: portrait) {
 
     .left-grid > * { padding: 1vh 0; }
     .flex-col { font-size:1.2em; }
@@ -78,7 +78,7 @@
 }
 
 /*  For all mobile screens in landscape mode*/
-@media screen and (max-width: 768px) and (orientation: landscape){
+@media screen and (max-width: 820px) and (orientation: landscape){
     .grid-container {
         grid-template-columns: 0.4fr 0.6fr;
     }
@@ -87,7 +87,7 @@
 
 }
 
-@media screen and (min-width: 768px), (max-width: 768px) and (orientation: landscape ) {
+@media screen and (min-width: 820px), (max-width: 820px) and (orientation: landscape ) {
     .flex-row {
         display: flex;
         flex-direction: row;
@@ -104,7 +104,7 @@
 }
 
 /* For all desktop */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 820px) {
     .grid-container {
         font-size: 0.8em;
         text-align: center;

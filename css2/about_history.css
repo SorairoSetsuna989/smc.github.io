@@ -37,7 +37,7 @@
 }
 
 /*  For all mobile screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
     .left-grid { text-align: center; }
     .left-item { padding: 1vh 1vw; }
     .grid-mid {
@@ -57,17 +57,17 @@
 }
 
 /*  For all mobile screens in portrait mode */
-@media screen and (max-width: 768px) and (orientation: portrait) {
+@media screen and (max-width: 820px) and (orientation: portrait) {
     .grid-item-0 { margin: 4vh 2vw; }   
 }
 
 /*  For all mobile screens in landscape mode*/
-@media screen and (max-width: 768px) and (orientation: landscape){
+@media screen and (max-width: 820px) and (orientation: landscape){
     .grid-item-0 { margin: 4vh 15vw; }   
 }
 
 /* For all desktop */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 820px) {
     .grid-item-3 { background-image: url(../img/history_1.jpg); }
     .grid-item-7 { background-image: url(../img/); }
     .grid-item-9 { background-image: url(../img/history_3.jpg); }
