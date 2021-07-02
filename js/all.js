@@ -7,7 +7,7 @@ const navCodes = ['home','about','academic','admissions','community','contact']
 
 const navLinks = [
   '<div class="nav-item" id="smc"><span>Stella</span><span style="font-family:magneto">Maris </span><span>College</span></div>',
-  link(navCls,"https://sorairosetsuna989.github.io/smcqc/", "Home"),
+  link(navCls,"../index.html", "Home"),
   `<div class="nav-item nav-dropdwn nav-drop1" title="See about overview">${link("main-link","about.html", "About Us <i class='fa fa-caret-down'>")}</div>`,
   `<div class="nav-item nav-dropdwn nav-drop2" title="See academic overview">${link("main-link","academic.html",'Academic <i class="fa fa-caret-down">')}</div>`,
   link(navCls,"admissions.html", "Admissions"),
@@ -58,11 +58,14 @@ function revealLinks() {
 
 function link(c, h, t) {return `<a class="${c}" href="${h}">${t}</a>`}
 
+function toTop(){
+  d.body.scrollTop = d.documentElement.scrollTop = 0;
+}
 $(d).ready( () => {
 
   /// Scrolling
   window.onscroll = function() { stickNav(); showBackToTop(); }
-  $("body").append(`<button onclick="() => d.body.scrollTop = d.documentElement.scrollTop = 0;" id="toTop" title="Back to Top"><i class="fa fa-2x fa-arrow-up"></i></button>`);
+  $("body").append('<button onclick="toTop()" id="toTop" title="Back to Top"><i class="fa fa-2x fa-arrow-up"></i></button>');
 
   /// Desktop nav bar
   $("#navbar").append(navLinks)
