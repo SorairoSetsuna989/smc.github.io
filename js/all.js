@@ -7,7 +7,7 @@ const navCodes = ['home','about','academic','admissions','community','contact']
 
 const navLinks = [
   '<div class="nav-item" id="smc"><span>Stella</span><span style="font-family:magneto">Maris </span><span>College</span></div>',
-  link(navCls,"../index.html", "Home"),
+  link(navCls,"https://sorairosetsuna989.github.io/smcqc", "Home"),
   `<div class="nav-item nav-dropdwn nav-drop1" title="See about overview">${link("main-link","about.html", "About Us <i class='fa fa-caret-down'>")}</div>`,
   `<div class="nav-item nav-dropdwn nav-drop2" title="See academic overview">${link("main-link","academic.html",'Academic <i class="fa fa-caret-down">')}</div>`,
   link(navCls,"admissions.html", "Admissions"),
