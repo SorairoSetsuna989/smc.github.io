@@ -5,11 +5,13 @@ var itemNo = 0;
 var postDat = [];
 
 function generateID() {
-    let newID = (Math.random() * 0xfffff * 1000000).toString(16).slice(0, 6);
-    if (newID in posts) generateID()
-    posts.push(newID);
-    pages = Math.ceil(posts.length / 5);
-    return newID
+    const newID = (Math.random() * 0xfff * 10000).toString(16).slice(0, 4);
+    if (newID in posts) generateID();
+    else {
+        posts.push(newID);
+        pages = Math.ceil(posts.length / 5);
+        return newID
+    }
 }
 
 function Post(author = "", authorPic = "", title="", synopsis=[], src="", id = generateID() ) {
@@ -71,22 +73,19 @@ function Elem(txt="", tag = "p", c ="", src="", title="") {
     }
 }
 
-function post(e) {
-    postDat.push(e);
-    new Post(...e);
-}
-
+function post(e) {postDat.push(e); new Post(...e)}
 function loadposts(){
-    for (let PageNo = 1; PageNo < pages + 1; PageNo++) {
-        $.getJSON(`js/${PageNo}-post.json`, _posts => { 
+    for (let pageNo = 1; pageNo < pages + 1; pageNo++) {
+        $.getJSON(`js/${pageNo}-post.json`, _posts => { 
             _posts.forEach(_post => post(_post))
         })
     }
 }
 
-function UpdatePageCount(){
+function UpdatePageCount() {
     $.getJSON("js/page-count.json", dat => {
-        pages = parseInt(dat); loadposts() });
+        pages = parseInt(dat); loadposts() 
+    });
 }
 
 UpdatePageCount()

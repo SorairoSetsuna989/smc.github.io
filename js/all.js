@@ -7,7 +7,7 @@ const navCodes = ['home','about','academic','admissions','community','contact']
 
 const navLinks = [
   '<div class="nav-item" id="smc"><span>Stella</span><span style="font-family:magneto">Maris </span><span>College</span></div>',
-  link(navCls,"https://sorairosetsuna989.github.io/smcqc", "Home"),
+  link(navCls,"../index.html", "Home"),
   `<div class="nav-item nav-dropdwn nav-drop1" title="See about overview">${link("main-link","about.html", "About Us <i class='fa fa-caret-down'>")}</div>`,
   `<div class="nav-item nav-dropdwn nav-drop2" title="See academic overview">${link("main-link","academic.html",'Academic <i class="fa fa-caret-down">')}</div>`,
   link(navCls,"admissions.html", "Admissions"),
@@ -22,17 +22,16 @@ const aboutList = [
     ["about_mvstatement.html","Mission & Vision"],
     ["about_officials.html","Faculty & Staff"],
     ["about_mottoseal.html","Motto & Seal"]
-  ]
+]
 
-  const academicList = [
-    ["academic.html#gd1","Programs Offered"],
-    ["academic.html#gd2","Instructional Program"]
-  ]
-
+const academicList = [
+  ["academic.html#gd1","Programs Offered"],
+  ["academic.html#gd2","Instructional Program"]
+]
 
 function showBackToTop() { 
   // Reveals back to top button when the user scrolls down a certain amount.
-  $("#toTop").css("display",  ((d.documentElement.scrollTop) > 250) ? "block":"none")
+  $("#toTop").css("display", ((d.documentElement.scrollTop) > 250) ? "block":"none")
 }
 
 function stickNav() { 
@@ -65,10 +64,10 @@ $(d).ready( () => {
   window.onscroll = function() { stickNav(); showBackToTop(); }
   $("body").append(`<button onclick="() => d.body.scrollTop = d.documentElement.scrollTop = 0;" id="toTop" title="Back to Top"><i class="fa fa-2x fa-arrow-up"></i></button>`);
 
-  /// Navigation bar
-  $("#navbar").append(navLinks) // Desktop version
+  /// Desktop nav bar
+  $("#navbar").append(navLinks)
 
-  // Adds items for the mobile version using data based on the original nav bar
+  // Mobile navbar based on the desktop ver
   $("#mobilenav").prepend('<div style="text-align:center; color: white; padding: 10px;"><span>Stella </span><span style="font-family: magneto ">Maris </span><span>College</span></div>');
   $(".main-link").each((i, elem) => $("#myLinks").append(`<a href="${elem.href}">${elem.text}</a>`))
   $("#mobilenav").append('<a href="javascript:void(0);" class="icon" onclick="revealLinks()"><i class="fa fa-bars"></i></a>');
