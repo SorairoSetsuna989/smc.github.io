@@ -1,0 +1,81 @@
+
+/* For All Screens */
+@media screen {
+    body { 
+        background-image: url("../img/about_3.JPG"); 
+        font-family: 'Times New Roman';
+    }
+
+    .grid-item:not(.grid-item-0) { 
+        margin-bottom: 5vW; 
+        background-color: white;
+        color: #25245D;
+        text-align: justify;
+    }
+
+    .grid-item-0 {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+}
+
+/*  For all mobile screens */
+@media screen and (max-width: 820px) {
+    .grid-container > * {  font-size: 0.85em;  }
+
+}
+
+/*  For all mobile screens in portrait mode */
+@media screen and (max-width: 820px) and (orientation: portrait) {
+    .grid-item {
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+
+    .inner {
+        margin-left: 2vw;
+        margin-right: 2vw;
+        padding: 2vh 1vw;
+        border-radius: 13px;
+        font-size: 0.8em;
+    }
+}
+
+/*  For all mobile screens in landscape mode*/
+@media screen and (max-width: 820px) and (orientation: landscape){
+    .grid-container {
+        grid-template-columns: 0.85fr;
+    }
+}
+
+/* For all desktop */
+@media screen and (min-width: 820px)  {
+    .grid-container { grid-template-columns: 0.75fr; }
+    .grid-item-0, .grid-item-1 { margin-bottom: 0 !important; }
+}
+
+/* For Desktop and landscape oriented mobile screens */
+@media screen and (min-width: 820px), (max-width: 820px) and (orientation: landscape ) {
+    .grid-container {
+        margin:2vh 2vw 0;
+        font-size: 0.8em;
+        text-align: left;
+    }
+
+    .grid-item {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .inner {
+        margin-left: 4vw;
+        margin-right: 4vw;
+        padding: 2vh 1vw;
+        border-radius: 13px;
+        font-family: arial;
+    }
+}
+/* For all hovering capable screens */
+@media (hover: hover) {
+
+}

@@ -1,0 +1,106 @@
+
+/* For All Screens */
+@media screen {
+    .grid-container-1 .grid-item:not(.grid-item-0) { height: 45vh; }
+    .grid-container { 
+        margin-top: 3vh;
+        row-gap: 3vh;
+    }
+    .grid-item { 
+        overflow: hidden; 
+        margin-top:4vh;
+    }
+    .grid-item:not(.grid-item-0) { 
+        background-color: white;
+        color: #25245D;
+    }
+
+    .grid-container-1 .grid-item img { width: 100%; }
+    .grid-container-2 .grid-item img { width: 40%; }
+    .grid-item-a div {
+        background-position:center;
+        height: 80%;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        -ms-transform: translateY(-10%);
+        transform: translateY(-10%);
+    }
+
+    .grid-item-9 li { padding: 1vmin; }
+    .grid-item-10 { background-image: url(); }
+ }
+
+/*  For all mobile screens */
+@media screen and (max-width: 820px) {
+
+}
+
+/*  For all mobile screens in portrait mode */
+@media screen and (max-width: 820px) and (orientation: portrait) {
+    .grid-container-1 .grid-item:not(.grid-item-0) { height: 30vh; }
+    .grid-item-5 {  background-image: url(../img/cvif.JPG); }
+    .grid-item-7 { background-image: url(../img/aca_4.JPG); }
+    .grid-item-9 { background-image: url(); }
+    .grid-item-5, .grid-item-7, .grid-item-9 { padding: 5vh 0;}
+    .grid-container-2 .grid-item img { display: none; }
+    .grid-left div { 
+      background-color: white;
+      color:#25245D;
+      opacity: 70%;
+    }
+    .grid-item p {
+      opacity: 100%;
+      margin: 6vh 0;
+      padding: 2vh 5vw;
+      font-size: 1em;
+      text-align: justify;
+    }
+  
+    .grid-item-a, .grid-item-b { 
+      font-size: 0.9em;
+      text-align: center;
+      padding: 1vh 1vw;
+    }
+}
+
+/*  For all mobile screens in landscape mode*/
+@media screen and (max-width: 820px) and (orientation: landscape){
+    .grid-container { grid-template-columns: 0.75fr; }
+    .grid-container-2 {  grid-template-columns: 0.85fr;  }
+    div > p {  margin: 10vh 0; }
+
+}
+
+/* For all desktop */
+@media screen and (min-width: 820px) {
+    .grid-container-2 {  grid-template-columns: 0.75fr;  }
+}
+/* For Desktop and landscape oriented mobile screens */
+@media screen and (min-width: 820px), (max-width: 820px) and (orientation: landscape ) {
+    .grid-container-1 { grid-template-columns: 45vw 45vw; }
+    .grid-container-2 {  font-size: 0.8em; }
+    .grid-item div {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        text-align: justify;
+    }
+
+    .grid-item div p { padding: 2vh 2vw; }
+    .readmore { padding-left: 20vw;}
+    .grid-left { text-align: left; }
+
+    .grid-item-9 {
+        font-size: 0.9em;
+        padding:0;
+    }
+}
+
+/* For all hovering capable screens */
+@media (hover: hover) {
+    .grid-container-3 .grid-item { cursor: pointer;  }
+}   

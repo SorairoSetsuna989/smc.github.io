@@ -1,0 +1,68 @@
+/* For All Screens */
+@media screen {
+    .grid-item { opacity: 100%; }
+    
+    /* Background images for each grid */
+    .grid-item-1 { background-image: url(../img/history.jpg); }
+    .grid-item-2 { background-image: url(../img/about_2.JPG); }
+    .grid-item-3 { background-image: url(../img/collections.jpg); }
+    .grid-item-4 { background-image: url(../img/about_6.JPG); }
+    .grid-item-6 { background-image: url(../img/officials_2.JPG); }
+    .grid-item-5 {
+      background-image: url(../img/motto_seal.png);
+      background-size: contain;
+    }
+
+    .caption { opacity: 80%; }
+    .NewLearn { display: none; }
+}
+
+/*  For all mobile screens */
+@media screen and (max-width: 820px) {
+    .grid-container {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    .grid-item { margin: 2vh 4vw; }
+}
+
+/*  For all mobile screens in portrait mode */
+@media screen and (max-width: 820px) and (orientation: portrait) {
+    /* no content atm */
+}
+
+/*  For all mobile screens in landscape mode*/
+@media screen and (max-width: 820px) and (orientation: landscape){
+    .grid-container { grid-auto-columns: 80vw; }
+    .caption-3, .caption-4, .caption-5 { margin: 15vh 0; }
+}
+
+/* For all desktop */
+@media screen and (min-width: 820px) {
+    a { color:#25245D; }
+
+    .grid-container {
+        margin-left: 2vmin;
+        padding: 16px 12px 12px 12px;
+        grid-gap: 20px;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-auto-rows: 60vh;
+        font-size: 0.9em;
+    }
+  
+    .readmore { padding-left: 30vw; }
+    .NewLearn { text-align: right;  }
+    .caption-3, .caption-4, .caption-5 { opacity: 0% !important; }
+    .caption-2 p { margin: 1vh 5vw; }
+}
+
+/* For all hovering capable screens */
+@media (hover: hover) {
+    .grid-item:hover .NewLearn { display:block; }
+    .grid-item:hover .NewTitle { display:none; }
+    .caption { opacity: 0%; };
+    .grid-item-2:hover { background-image: url(../img/about_1.JPG); }
+    .grid-item-4:hover { background-image: url(../img/about_61.JPG); }
+    .grid-item-6:hover { background-image: url(../img/officials_3.JPG); }
+}

@@ -1,33 +1,27 @@
-window.onscroll = () => { stickNav(); showBackToTop() }
-createNavBar()
-createMobileNav()
-setActive()
-const d = document
+
+var d = document
 $("body").append('<button onclick="topFunction()" id="toTop" title="Back to Top"><i class="fa fa-2x fa-arrow-up"></i></button>');
 
-//Get the button:
-const back = d.getElementById("toTop");
-
 function showBackToTop() { //Reveals back to top function when the user scrolls down a certain amount
-  back.style.display = (d.body.scrollTop || d.documentElement.scrollTop) > 250 ? "block":"none"
+  d.getElementById("toTop").style.display = ((d.documentElement.scrollTop) > 250) ? "block":"none"
 }
 
 function topFunction() {
-  d.body.scrollTop, d.documentElement.scrollTop = 0; // For Safari, For Chrome, Firefox, IE and Opera
+  d.body.scrollTop = d.documentElement.scrollTop = 0; // For Safari | For Chrome, Firefox, IE and Opera
 }
 
-const nav = d.getElementById("navbar");
+var nav = d.getElementById("navbar");
 const sticky = nav.offsetTop; // Get the offset position of the navbar
 function stickNav() { // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-  $(".dropdown-content").css("position", window.pageYOffset >= sticky ? "fixed":"absolute" );
-  window.pageYOffset >= sticky ? nav.classList.add("sticky"): nav.classList.remove("sticky")
+  $(".dropdown-content").css("position", (window.pageYOffset >= sticky) ? "fixed":"absolute");
+  (window.pageYOffset >= sticky) ? nav.classList.add("sticky"): nav.classList.remove("sticky");
 }
 
 function createNavBar() {
   // Desktop version
   let SetLinks = [
     '<div class="nav-item" id="smc"><span>Stella </span><span style="font-family:magneto">Maris </span><span>College</span></div>',
-    '<a class="nav-item main-link" href="https://sorairosetsuna989.github.io/smcqc/">Home</a>',
+    '<a class="nav-item main-link" href="../index.html">Home</a>',
     '<div class="nav-item nav-dropdwn nav-drop1" title="See about overview"><a class="main-link" href="about.html">About Us <i class="fa fa-caret-down"></a></div>',
     '<div class="nav-item nav-dropdwn nav-drop2" title="See academic overview"><a class="main-link" href="academic.html">Academic <i class="fa fa-caret-down"></a></div>',
     createLink("nav-item main-link","admissions.html", "Admissions"),
@@ -79,3 +73,8 @@ $(".nav-dropdwn").append('<div class="dropdown-content"></div>');
 aboutList.forEach( i =>  $(".nav-dropdwn:first .dropdown-content").append(createLink("list-item", ...i)))
 academicList.forEach( i =>  $(".nav-dropdwn:last .dropdown-content").append(createLink("list-item", ...i)))
 function createLink(c, h, t) {return `<a class="${c}" href="${h}">${t}</a>`}
+
+window.onscroll = function() { stickNav(); showBackToTop(); }
+createNavBar()
+createMobileNav()
+setActive()
