@@ -2,6 +2,7 @@
 @media screen {
   #navbar {
     padding: 0;
+    padding-top: 1vh;
     width: 100%;
     z-index: 600;
     font-size: 1.2em;
@@ -90,7 +91,7 @@
   }
     
   /* Add some top padding to the page content to prevent sudden quick movement */
-  .sticky + .content { padding-top: 50px; }
+  .sticky { padding-top:75px; }
   .nav-item > * { color: white; }
   
   .nav-dropdwn {
@@ -106,6 +107,7 @@
     font-size: 0.8em;
     text-align: left;
     position:absolute;
+    overflow:visible;
     background-color: white;
     transform: translateX(-4%);
     -ms-transform: translateX(-4%);
@@ -134,5 +136,4 @@
     background-color: #ddd;
     color: black;
   }
-  
 }

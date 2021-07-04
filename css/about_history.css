@@ -1,6 +1,6 @@
 /* For All Screens */
 @media screen {
-    body { background-image: url("../img/history_bg.jpg"); }
+    body { background-image: url("../img/bg-history.jpg"); }
 
     p {
         font-family: 'Times New Roman';
@@ -8,12 +8,12 @@
     }
 
     .left-item {
-        background-color: #25245D;
         border-radius: 8px;
         padding-top: 3vh;
         padding-bottom: 1vh;
         padding-left: 2vh;
         font-size: 0.9em;
+        background-color: #25245D;
     }
 
     .left-grid {
@@ -21,11 +21,6 @@
         grid-gap: 2vmin;
     }
     
-    .current {
-        background-color: lightskyblue;
-        color:#25245D;
-    }
-
     .grid-item-0 {
         display: flex;
         justify-content: center;
@@ -34,6 +29,15 @@
     .flex-container {
         width: 100%;
     }
+
+    .current {
+        background-color: lightskyblue;
+        color: #25245D;
+    }
+    .grid-mid {
+        color: #25245D;
+        background-color: white;
+    }
 }
 
 /*  For all mobile screens */
@@ -41,8 +45,6 @@
     .left-grid { text-align: center; }
     .left-item { padding: 1vh 1vw; }
     .grid-mid {
-        color: #25245D;
-        background-color: white;
         opacity: 85%;
     }
 
@@ -106,8 +108,6 @@
         padding-left: 4vw;
         padding-right: 4vw;
         text-align: justify;
-        background-color: white;
-        color:#25245D;
     }
 
     .row-2 { grid-row-start: 2; }
@@ -118,10 +118,8 @@
         background-position-y:translateY(20%) ;
         grid-column-start: 3;
         grid-column-end: 4;
-        background-color: lightskyblue;
     }
 
-    /* For testing purposes */
     .flex-container {
         display: grid;
         grid-template-columns: 0.2fr 0.75fr;

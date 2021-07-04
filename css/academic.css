@@ -57,7 +57,7 @@
     }
   
     .grid-item-a, .grid-item-b { 
-      font-size: 0.9em;
+      font-size: 1em;
       text-align: center;
       padding: 1vh 1vw;
     }

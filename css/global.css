@@ -1,85 +1,97 @@
 
 /* For All Screens */
 @media screen {
-    #header-art {
-        width: 100%;
-        overflow: hidden;
-    }
+  #l {
+    display: grid;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: wheat;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    align-content: space-around;
+  }
 
-    body {
-        margin:0;
-        padding:0;
-        font-family: arial;
-        font-size: 1.8em;
-        background-position-x: middle;
-        background-attachment: fixed;
-        background-size: cover;
-        background-color: lightgray;
-    }
+  #header-art {
+      width: 100%;
+      overflow: hidden;
+  }
 
-    a { text-decoration:none; }
-    .flex-container { display: flex; }
-
-    .grid-container { 
-      display: grid;
-      justify-content: center;
-    }
-  
-    .grid-item {
-      color: white;
-      border-radius: 10px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position:center;
-      background-color: #25245D;
-    }
-
-    .gridtitle { 
-      display:block; 
-      padding: 1vmin;
+  body {
       margin:0;
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-      opacity: 100%;
-      color: #25245D;
-      background-color: white;
-    }
-    .grid-item-0 {
-      background-color: white;
-      grid-column-start: 1;
-      grid-column-end: -1;
-      justify-self: center;
-      padding: 0 5vw;
-      color: #25245D;
-    }
+      padding:0;
+      font-family: arial;
+      font-size: 1.8em;
+      background-position-x: middle;
+      background-attachment: fixed;
+      background-size: cover;
+      background-color: lightgray;
+  }
 
-    .readmore { font-size: 0.75em; }
+  a { text-decoration:none; }
+  .flex-container { display: flex; }
 
-    .caption {
-        padding-top: 2vh;
-        padding-bottom: 2vh;
-        position: relative;
-        border-radius: 8px;
-        text-align: center;
-        font-size: 1.2em;
-        opacity: 0%;
-        margin: 8vh 0;
-        color: #25245D;
-        background-color: lightgray;
-      }
+  .grid-container { 
+    display: grid;
+    justify-content: center;
+  }
 
-      #toTop {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        z-index: 99;
-        border: none;
-        outline: none; 
-        cursor: pointer;
-        background: wheat;
-        border-radius: 50%;
-        font-size: 1em;
-    }
+  .grid-item {
+    color: white;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: #25245D;
+  }
+
+  .gridtitle { 
+    display:block; 
+    padding: 1vmin;
+    margin:0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    opacity: 100%;
+    color: #25245D;
+    background-color: white;
+  }
+  .grid-item-0 {
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    justify-self: center;
+    padding: 0 5vw;
+    color: #25245D;
+  }
+
+  .readmore { font-size: 0.75em; }
+
+  .caption {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    position: relative;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2em;
+    opacity: 0%;
+    margin: 8vh 0;
+    color: #25245D;
+    background-color: lightgray;
+  }
+
+  #toTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    z-index: 99;
+    border: none;
+    outline: none; 
+    cursor: pointer;
+    background: wheat;
+    border-radius: 50%;
+    font-size: 1em;
+  }
 }
 
 /*  For all mobile screens */
@@ -126,7 +138,7 @@
 @media screen and (min-width: 820px) {
   #header-art img { width: 100%; }
   #header-art {
-      height: 39vh;
+      height: 30fr;
       width: 100%;
       overflow: hidden;
   }

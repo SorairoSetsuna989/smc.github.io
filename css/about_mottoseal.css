@@ -3,9 +3,9 @@
     body { background-image: url("../img/about_3.JPG"); }
 
     .grid-item { 
-        background-color: white; 
         opacity:85%;
         padding: 2vh 2vw;
+        background-color: white;
     }
     
     .grid-item > * {

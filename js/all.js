@@ -7,7 +7,7 @@ const navCodes = ['home','about','academic','admissions','community','contact']
 
 const navLinks = [
   '<div class="nav-item" id="smc"><span>Stella</span><span style="font-family:magneto">Maris </span><span>College</span></div>',
-  link(navCls,"https://sorairosetsuna989.github.io/smcqc/", "Home"),
+  link(navCls,"/", "Home"),
   `<div class="nav-item nav-dropdwn nav-drop1" title="See about overview">${link("main-link","about.html", "About Us <i class='fa fa-caret-down'>")}</div>`,
   `<div class="nav-item nav-dropdwn nav-drop2" title="See academic overview">${link("main-link","academic.html",'Academic <i class="fa fa-caret-down">')}</div>`,
   link(navCls,"admissions.html", "Admissions"),
@@ -36,8 +36,8 @@ function showBackToTop() {
 
 function stickNav() { 
   // Moves the navbar to the top until it sticks the top.
-  $(".dropdown-content").css("position", (window.pageYOffset >= sticky) ? "fixed":"absolute");
-  (window.pageYOffset >= sticky) ? nav.classList.add("sticky"): nav.classList.remove("sticky");
+  //$(".dropdown-content").css("position", (window.pageYOffset >= sticky) ? "fixed":"absolute");
+  (window.pageYOffset > sticky) ? nav.classList.add("sticky"): nav.classList.remove("sticky");
 }
 
 function setActive() {
