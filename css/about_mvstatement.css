@@ -1,7 +1,7 @@
 
 /* For All Screens */
 @media screen {
-    body {  background-image: url(../img/sc_2.jpg);  }
+    body {  background-image: url(../img/jr1.jpg);  }
     li { padding:1vmin; }
     .grid-item {
         padding: 3vmin;
@@ -11,7 +11,26 @@
     .grid-item {
         color: #25245D;
         background-color: white;
+ 
     }
+    .grid-container {
+        display: flex;
+        margin: 2vmin;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .grid-text p {
+        text-align: justify;
+    }
+
+    .grid-text {
+        width: 80%;
+        padding: 4vmin;
+        text-align: center;
+    }  
+    .grid-text ul { list-style-type: none; }
+
 }
 
 /*  For all mobile screens */
@@ -21,6 +40,9 @@
 
 /*  For all mobile screens in portrait mode */
 @media screen and (max-width: 820px) and (orientation: portrait) {
+    .grid-text {
+        width: 90%;
+    }  
 
 }
 
@@ -31,18 +53,7 @@
 
 /* For all desktop */
 @media screen and (min-width: 820px) {
-    .grid-container {
-        grid-template-columns: 40vw 50vw;
-        grid-template-rows: 70vh;
-        row-gap: 12vmin;
-        column-gap: 4vmin;
-        margin: 2vmin;
-    }
 
-    .grid-text {
-        text-align: justify;
-        padding: 4vmin;
-    }
 
     .grid-item-3 {
         grid-column-start: 1;

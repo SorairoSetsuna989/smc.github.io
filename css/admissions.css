@@ -5,11 +5,11 @@
         padding: 0;
         opacity: 100%;
     }
-    .grid-item img { width: 100%; height: 100%;}
+    .grid-item img { width: 100%; }
     img { 
         border-radius: 8px;
-        padding: 0;
         margin: 0;
+        object-fit: contain;
     }
     
     .grid-item-4 {
@@ -22,6 +22,7 @@
     li { margin: 2vh 0; }
     li:hover { text-decoration: underline; }
     li a { color: #25245D; }
+
 }
 
 /*  For all mobile screens in portrait mode */
@@ -35,6 +36,7 @@
         text-align: center;
     }
 
+
 }
 
 /*  For all mobile screens in landscape mode*/
@@ -42,16 +44,15 @@
     .grid-item-4 { font-size: 1.1em; }
     .grid-container {
         grid-template-columns: 0.8fr;
-        grid-auto-rows: 85vh;
+        grid-auto-rows: auto;
     }
-
 }
 
 /* For all desktop */
 @media screen and (min-width: 820px) {
     .grid-container {
         grid-template-columns: 0.7fr;
-        grid-auto-rows: 75vh;
+        grid-auto-rows: auto;
     }
 }
 

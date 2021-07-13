@@ -1,7 +1,7 @@
 
 /* For All Screens */
 @media screen {
-    body { background-image: url("../img/officials_bg.JPG"); }
+    body { background-image: url("../img/officials_bg.jpg"); }
 
     .grid-item { 
       opacity: 100%; 

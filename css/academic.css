@@ -9,6 +9,7 @@
     .grid-item { 
         overflow: hidden; 
         margin-top:4vh;
+
     }
     .grid-item:not(.grid-item-0) { 
         background-color: white;
@@ -38,8 +39,8 @@
 /*  For all mobile screens in portrait mode */
 @media screen and (max-width: 820px) and (orientation: portrait) {
     .grid-container-1 .grid-item:not(.grid-item-0) { height: 30vh; }
-    .grid-item-5 {  background-image: url(../img/cvif.JPG); }
-    .grid-item-7 { background-image: url(../img/aca_4.JPG); }
+    .grid-item-5 {  background-image: url(../img/cvif.jpg); }
+    .grid-item-7 { background-image: url(../img/aca_4.jpg); }
     .grid-item-9 { background-image: url(); }
     .grid-item-5, .grid-item-7, .grid-item-9 { padding: 5vh 0;}
     .grid-container-2 .grid-item img { display: none; }
@@ -57,7 +58,7 @@
     }
   
     .grid-item-a, .grid-item-b { 
-      font-size: 0.9em;
+      font-size: 1em;
       text-align: center;
       padding: 1vh 1vw;
     }

@@ -1,14 +1,46 @@
 [
     [
-        "author",
-        "",
-        "This is a test post: 6",
-        ["p", "This is a test post"]
+        "Sr. Amelita Abalos, FMM",
+        "smcicon.png",
+        "Ecobricks Project",
+        [
+            "p",
+            "Stella Maris College has committed to take personal responsibility for our plastic waste in the campus. In 2018 the Ecobrick project was launch. Students were taught to save, segregate, and pack plastics into bottles in their free time. Parents, Sisters in the convent also cooperated and tried to safely secure plastic out of the biosphere", 
+            "images|5",
+            "../img/posts/0005_0**.jpg"
+        ],
+        "0005",
+        "https://web.facebook.com/story.php?story_fbid=4038035196235635&id=100000875841288"
     ],
+    [
+        "Vince Tividad <br> (batch 2021)",
+        "vince.jpg",
+        "",
+        [
+        "p", "All my years spent in Stella Maris were a big challenge for me, but the best advice that I can give to all future  Stellan students is to be with God all the time. God is my guide throughout my whole Stellan life, and He helped me conquer all challenges. With God, everything is possible. "
+        ],
+        "0006",
+        "https://web.facebook.com/sionyjomen/posts/10165291358175397"
+    ],
+    [
+        "Alex Santos <br> (batch 2021)",
+        "alexsantos.jpg",
+        "",
+        [
+            "p","The student council enhanced my confidence to actualize the ideas I have in mind gaining a whole new journey in leadership. I am not afraid to stand up and uphold what is righteous. It also helped me manage group performance tasks and even school-wide productions such as “Ako Kiko” and the annual SMC Fest. ",
+            "images|3",
+            "../img/posts/0011_0**.jpg"
+        ],
+        "0011",
+        "https://web.facebook.com/sionyjomen/posts/10165333182815397"
+
+    ],
+
     [
         "SMC",
         "smcicon.png",
-        "Ecobricks Project",
-        ["img","img/alumni1.jpg"] 
+        "Tanghal Kalikasan Highlights Part 2",
+        ["video", "../img/posts/set02-2mb.mp4"],
+        "0008"
     ]
 ]

@@ -2,9 +2,11 @@
 /* For All Screens */
 @media screen {
     body {
-        background-image: url(../img/about_1.JPG);
-        background-position: top;
+        background-image: url(../img/j2.jpg);
+        background-position: 0 300px;
         background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
     }
 
     .grid-item:not(.grid-item-0) {

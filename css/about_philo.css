@@ -2,8 +2,10 @@
 /* For All Screens */
 @media screen {
     body { 
-        background-image: url("../img/about_3.JPG"); 
+        background-image: url("../img/j1.jpg"); 
         font-family: 'Times New Roman';
+        background-position: 0 300px;
+        background-attachment: scroll;
     }
 
     .grid-item:not(.grid-item-0) { 
@@ -37,7 +39,7 @@
         margin-right: 2vw;
         padding: 2vh 1vw;
         border-radius: 13px;
-        font-size: 0.8em;
+        font-size: 0.5em;
     }
 }
 
